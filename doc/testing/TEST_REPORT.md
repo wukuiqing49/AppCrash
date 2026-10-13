@@ -5,7 +5,9 @@
 - 按用户指定改用 JitPack；删除旧公共 Maven 文件目录，发布坐标改为 `com.github.wukuiqing49:AppCrash:1.0.0`，源码包名不变。新增 jitpack.yml 指定 JDK 17，仅测试并发布 lib_crash，不发布 demo，不使用 GitHub Actions 或下载 Token。
 - `:lib_crash:testDebugUnitTest :lib_crash:publishReleasePublicationToMavenLocal` 本地成功，JVM 测试复用通过输出；新坐标的 AAR/POM/Gradle metadata 已生成。前两次因本机虚拟内存不足未启动 JVM，关闭本项目专用模拟器并以单进程 512 MB 堆重试后成功，没有终止其他项目构建进程。
 - 通用 App 构建检查器仍要求不存在的 app 模块，返回 2 错误及 1 提示；本项目为 lib_crash + demo，不适用该固定 App 路径检查。实际 Gradle 发布成功，不据此声称该通用门禁通过。
-- 云端构建及匿名下载结果待标签推送后验证；下方 raw Maven 下载方案为历史配置，当前已停用。本轮不修改故障实现，不重复设备崩溃测试。
+- 已推送提交 `86d778b` 与标签 `1.0.0`。JitPack API 返回 status=ok、jdk=17、private=false，构建 commit 与标签一致；匿名 POM 下载返回 HTTP 200。
+- 独立 Gradle 消费者从 https://jitpack.io 按 `com.github.wukuiqing49:AppCrash:1.0.0` 解析 AAR 与 kotlin-stdlib/annotations 成功（--refresh-dependencies）。匿名下载云端 AAR，三个 ABI、consumer rules 及所有 ELF LOAD 段 16384 字节对齐检查通过；没有将本地 AAR 检查当成云端产物证据。
+- 下方 raw Maven 下载方案为历史配置，当前已停用。本轮不修改故障实现，不重复设备崩溃测试；云端 AAR 不等于真实 16 KB 页面设备运行验证。当前发布说明已更新到 README。
 
 ## 历史：测试页面与无 Token 发布（2026-10-13）
 
