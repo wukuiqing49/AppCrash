@@ -7,8 +7,8 @@ def libraryVersion = providers.gradleProperty('publishVersion').getOrElse(libs.v
 if (!(libraryVersion ==~ /(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)\.(?:0|[1-9]\d*)/)) {
     throw new GradleException('publishVersion must be a release version such as 1.0.0')
 }
-group = 'com.wkq'
-version = libraryVersion
+group = 'com.github.wukuiqing49'
+version = providers.environmentVariable('VERSION').getOrElse(libraryVersion)
 
 android {
     publishing { singleVariant('release') }
@@ -40,20 +40,11 @@ android {
 }
 dependencies { testImplementation libs.junit }
 
-publishing {
-    repositories {
-        maven {
-            name = 'PublicMaven'
-            url = rootProject.layout.projectDirectory.dir('maven')
-        }
-    }
-}
-
 afterEvaluate {
     publishing.publications {
         release(MavenPublication) {
             from components.release
-            artifactId = 'lib-crash'
+            artifactId = 'AppCrash'
             pom {
                 name = 'lib_crash'
                 description = 'Explicit Java/Kotlin and native crash scenarios for Android testing.'

@@ -50,11 +50,11 @@
 - `native-artifacts` 还须核对 APK 的三个 ABI 与 AAR 字节一致；R8 夹具状态必须已通过。
 - `native-device` 对八类 C++ 异常核对类型和诊断信息；其余五类直接信号场景不宣称完成符号化堆栈验证。历史日志重放与设备重新执行分别记录。
 
-## Gradle 公共 Maven 发布验证
+## JitPack 发布验证
 
-- `:lib_crash:publishReleasePublicationToPublicMavenRepository`：生成根目录 maven/，不使用 Actions 或 Token，不自动推送 Git。
-- 发布坐标 `com.wkq:lib-crash:<版本>`；默认版本为版本目录 libCrash，`-PpublishVersion` 可覆盖，标签不触发发布。
-- 验证生成的 Maven 仓库可解析、POM/AAR/Gradle metadata、三个 ABI、consumer rules。公共 GitHub raw 下载须在版本目录推送后另行验收，不由本地构建推断。
+- `:lib_crash:testDebugUnitTest :lib_crash:publishReleasePublicationToMavenLocal`：检查 JitPack 所需本地发布，不使用 Actions 或 Token。
+- 发布坐标 `com.github.wukuiqing49:AppCrash:<标签>`；本地默认版本为 libCrash，JitPack 使用 VERSION 环境变量。
+- 验证 POM/AAR/Gradle metadata、三个 ABI、consumer rules。标签推送后请求 JitPack 构建，再执行匿名 Gradle 远程依赖解析，不由本地发布推断云端成功。
 
 ## 功能边界
 

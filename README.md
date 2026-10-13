@@ -12,7 +12,7 @@ Android 崩溃模拟库，库本身无 UI、自动初始化、采集 SDK 或网�
 - [独立场景](#独立场景)
 - [Native / SO 版本](#native--so-版本)
 - [宿主 R8 混淆](#宿主-r8-混淆)
-- [公共 Maven 发布](#公共-maven-发布)
+- [JitPack 发布](#jitpack-发布)
 - [配置入口](#配置入口)
 - [构建与测试命令](#构建与测试命令)
 - [常见问题](#常见问题)
@@ -20,11 +20,11 @@ Android 崩溃模拟库，库本身无 UI、自动初始化、采集 SDK 或网�
 
 ## 接入
 
-通过公共 GitHub Maven 目录接入，无需账号、Token 或 GitHub Actions，完整配置见[公共 Maven 发布](#公共-maven-发布)。宿主 app/build.gradle 添加：
+通过 JitPack 接入公共库，无需 Token 或 GitHub Actions，仓库配置见[JitPack 发布](#jitpack-发布)。宿主 app/build.gradle 添加：
 
 ```groovy
 dependencies {
-    implementation 'com.wkq:lib-crash:1.0.0'
+    implementation 'com.github.wukuiqing49:AppCrash:1.0.0'
 }
 ```
 
@@ -223,46 +223,48 @@ C++ 没有 Kotlin lateinit；这里用受检 optional 访问模拟。C++ 整数�
 
 Native 机制与调试参考：[JNI](https://developer.android.com/ndk/guides/jni-tips)、[16 KB 页面](https://developer.android.com/guide/practices/page-sizes)、[ndk-stack](https://developer.android.com/ndk/guides/ndk-stack)。
 
-## 公共 Maven 发布
+## JitPack 发布
 
-仅使用 Gradle 的 maven-publish，生成仓库根目录 `maven/`。该目录可以随源码提交到公共 GitHub 仓库，通过 raw 文件地址提供 Maven 下载。没有 GitHub Packages、认证凭据或 Actions 配置，也不依赖云端重新编译 Native。
+使用 Gradle maven-publish 将 release AAR 安装到 Maven Local，由 JitPack 按 Git 标签构建并托管。仅 lib_crash 发布，demo 不发布。无需上传 AAR、配置 Token 或 GitHub Actions。`jitpack.yml` 指定 JDK 17、接受构建环境 SDK 许可证及库测试/发布命令，NDK/CMake/SDK 版本仍以版本目录为准。
 
-生成默认版本（版本号来自 gradle/libs.versions.toml 的 libCrash）：
-
-```powershell
-.\gradlew.bat :lib_crash:publishReleasePublicationToPublicMavenRepository
-```
-
-更新时修改 libCrash，或明确覆盖版本号：
+本地验证发布（版本号来自 gradle/libs.versions.toml 的 libCrash）：
 
 ```powershell
-.\gradlew.bat :lib_crash:publishReleasePublicationToPublicMavenRepository -PpublishVersion=1.0.1
+.\gradlew.bat :lib_crash:testDebugUnitTest :lib_crash:publishReleasePublicationToMavenLocal
 ```
 
-生成目录为 `maven/com/wkq/lib-crash/<版本>/`，包含 release AAR、POM、Gradle Module Metadata 和校验文件。AAR 包含三个 ABI 的 so 与 consumer rules，不包含 demo App。未剥离 Native 符号留在本地构建目录，需要自行按版本归档。
+发布版本时提交源码并推送版本标签：
 
-将生成的 maven 目录与源码提交并推送到 GitHub 的 main 分支；仓库必须为 Public。Gradle 任务只生成本地目录，不自动执行 git commit/push。版本号使用新的发布版本，保留旧版本目录，不覆盖已被宿主使用的版本。Git 标签可用于标记源码，但不会触发发布。
+```powershell
+git tag 1.0.0
+git push origin main
+git push origin 1.0.0
+```
+
+访问 [JitPack 项目页面](https://jitpack.io/#wukuiqing49/AppCrash)，选择标签并点击 Get it，或请求该版本依赖触发构建。必须等构建成功才能下载。AAR 包含三个 ABI 的 so 与 consumer rules；未剥离 Native 符号留在构建目录，需要自行按版本归档。
+
+更新时修改 libCrash、提交并推送新的标签，例如 1.0.1；调用方同步更新依赖版本。JitPack 构建的版本使用其 VERSION 环境变量与标签一致。不要移动已发布标签。旧 GitHub raw Maven 目录已停用，当前坐标不再是 com.wkq:lib-crash。
 
 宿主 settings.gradle 的 dependencyResolutionManagement.repositories 增加：
 
 ```groovy
 maven {
-    url = uri('https://raw.githubusercontent.com/wukuiqing49/AppCrash/main/maven')
-    content { includeModule('com.wkq', 'lib-crash') }
+    url = uri('https://jitpack.io')
+    content { includeGroup('com.github.wukuiqing49') }
 }
 ```
 
-宿主模块引用 `implementation 'com.wkq:lib-crash:1.0.0'`。不配置 credentials，也不需要用户级 Token。仓库所有者、名称或发布分支改变时，应更新下载 URL。只有对应版本目录已推送后，公开地址才能下载该版本。
+宿主模块引用 `implementation 'com.github.wukuiqing49:AppCrash:1.0.0'`。仓库必须为 Public，下载无需 credentials。源码包名仍是 com.wkq.crash，不受 Maven 坐标变化影响。
 
-本机接入可使用 `:lib_crash:publishReleasePublicationToMavenLocal` 配合宿主的 mavenLocal()，或直接引用本地 maven 目录。公共 GitHub 目录适用于当前小型库，版本 AAR 会占用 Git 仓库空间；以后迁移到独立公共 Maven 服务时可继续复用现有 publication 配置。
+本机接入可使用 `:lib_crash:publishReleasePublicationToMavenLocal` 配合宿主的 mavenLocal()。发布流程依据 [JitPack Android 文档](https://docs.jitpack.io/android/)。
 
 ## 配置入口
 
 | 文件 | 配置内容 |
 | --- | --- |
 | gradle/libs.versions.toml | 本地默认库版本 libCrash、AGP/Kotlin、compileSdk/minSdk、NDK/CMake、依赖版本 |
-| lib_crash/build.gradle | Maven 坐标、release 发布变体、本地公共 Maven 输出目录、ABI 与 JNI 构建 |
-| maven/ | Gradle 生成的公共 Maven 仓库文件，提交到公共仓库后供宿主下载 |
+| lib_crash/build.gradle | JitPack Maven 坐标、release 发布变体、ABI 与 JNI 构建 |
+| jitpack.yml | JitPack 的 JDK 与构建/发布命令，不是 GitHub Actions |
 | lib_crash/consumer-rules.pro | AAR 自动传递给宿主的规则，包含 JNI 链接边界保留规则 |
 | gradle/crash-obfuscation.pro | 宿主手动选择启用的全局重打包和源码文件名规则 |
 
@@ -286,8 +288,8 @@ JVM 测试只执行非致命验证。Native 已在 Android 16 x86_64 模拟器�
 
 | 问题 | 说明与处理 |
 | --- | --- |
-| 依赖下载出现 404 | 检查仓库是否 Public、分支和 URL 是否正确、对应版本的 maven 目录是否已推送；不需要配置 Token |
-| 推送标签后没有新版本 | 标签不会发布；先执行 Gradle 发布任务，再将生成的 maven 目录提交并推送 |
+| 依赖下载出现 404 | 检查仓库是否 Public、标签已推送、坐标大小写正确及 JitPack 构建状态 |
+| 推送标签后没有新版本 | 在 JitPack 项目页请求该版本，查看 build.log；首次构建需要等待 |
 | 重发同版本失败 | 不覆盖已发布版本；代码更新后创建新的版本标签 |
 | Native 出现 UnsatisfiedLinkError | 检查宿主 ABI 过滤及最终 APK 的 lib 目录是否包含 libcrash_native.so；不支持 32 位 x86 |
 | 为什么崩溃不是在调用它的 Activity 行号 | Java/Kotlin 错误操作位于独立场景实现中；Native 错误位于 so 中。触发页面是调用入口，不会替换真实故障位置 |

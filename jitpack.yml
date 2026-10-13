@@ -1,0 +1,6 @@
+jdk:
+  - openjdk17
+before_install:
+  - SDK_MANAGER=$(find "$ANDROID_HOME" -path '*/bin/sdkmanager' -type f | sort | tail -n 1); yes | "$SDK_MANAGER" --licenses > /dev/null
+install:
+  - bash ./gradlew --no-daemon :lib_crash:testDebugUnitTest :lib_crash:publishReleasePublicationToMavenLocal

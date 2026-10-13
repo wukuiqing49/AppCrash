@@ -1,6 +1,13 @@
 # lib_crash 测试报告
 
-## 本轮：测试页面与无 Token 发布（2026-10-13）
+## 本轮：改用 JitPack（2026-10-13）
+
+- 按用户指定改用 JitPack；删除旧公共 Maven 文件目录，发布坐标改为 `com.github.wukuiqing49:AppCrash:1.0.0`，源码包名不变。新增 jitpack.yml 指定 JDK 17，仅测试并发布 lib_crash，不发布 demo，不使用 GitHub Actions 或下载 Token。
+- `:lib_crash:testDebugUnitTest :lib_crash:publishReleasePublicationToMavenLocal` 本地成功，JVM 测试复用通过输出；新坐标的 AAR/POM/Gradle metadata 已生成。前两次因本机虚拟内存不足未启动 JVM，关闭本项目专用模拟器并以单进程 512 MB 堆重试后成功，没有终止其他项目构建进程。
+- 通用 App 构建检查器仍要求不存在的 app 模块，返回 2 错误及 1 提示；本项目为 lib_crash + demo，不适用该固定 App 路径检查。实际 Gradle 发布成功，不据此声称该通用门禁通过。
+- 云端构建及匿名下载结果待标签推送后验证；下方 raw Maven 下载方案为历史配置，当前已停用。本轮不修改故障实现，不重复设备崩溃测试。
+
+## 历史：测试页面与无 Token 发布（2026-10-13）
 
 新增独立 `demo` 测试 App，支持 Java/Kotlin 与 Native 场景、主线程/后台线程、运行 ID、确认/取消及崩溃后查看上次记录；不进入库 AAR。新增 `scripts/verify_demo_device.py` 执行实际页面点击、故障判定与随机测试包清理。按最新要求删除发布 Action，移除 GitHub Packages 凭据，仅保留 Gradle maven-publish，将产物生成到仓库根目录 `maven/`。
 
