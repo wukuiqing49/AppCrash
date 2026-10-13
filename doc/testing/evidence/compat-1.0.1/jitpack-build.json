@@ -1,0 +1,15 @@
+{
+  "version" : "1.0.1",
+  "status" : "ok",
+  "message" : "",
+  "time" : 1791879337008,
+  "commit" : "16a19dbf2c63d6b7e541afe6643cf933c62ff56d",
+  "ci" : false,
+  "buildUrl" : "",
+  "modules" : [ ],
+  "image" : "latest",
+  "jdk" : 17,
+  "commitWhen" : 1791879248000,
+  "isTag" : true,
+  "private" : false
+}

@@ -264,6 +264,8 @@ maven {
 
 本仓库构建工具为 AGP 8.6.1、Gradle 8.7、JDK 17、compileSdk 35；这是编译本库源码的环境，不要求 AAR 使用者照搬全部版本。宿主仍需满足 minSdk 24、Kotlin 元数据及打包工具兼容条件。NDK r27 与显式 16 KB 配置保留；宿主使用 AGP 8.5.1 或更新版本可正确打包未压缩的 Native 库，仍须检查最终 APK/AAB 的所有 so。
 
+1.0.1 已验证：独立宿主使用 Kotlin 1.9.24、Java 8 字节码、AGP 8.6.1、Gradle 8.7、compileSdk/targetSdk 33、minSdk 24，从 JitPack 下载 AAR，编译统一入口、Native 入口和独立场景并生成 Debug APK 成功；不要求宿主将 compileSdk 升到 35。云端 AAR 的三个 ABI SO 均通过 16 KB ELF 对齐检查，真实 16 KB 页面设备运行仍待验证。
+
 1.0.0 保持原发布内容（Kotlin 2.1.21 / Java 17 字节码），需要较低接入门槛时使用 1.0.1。Kotlin 1.9.24 配合本仓库较新 AGP/Gradle 超出其旧版完整支持矩阵，以实际构建和消费者验证为准，不承诺任意旧版宿主均可接入。
 
 | 文件 | 配置内容 |

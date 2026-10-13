@@ -8,7 +8,9 @@
 - AAR 的全部 34 个 class major version 为 52（Java 8），CrashUtils 的 Kotlin metadata 为 [1,9,0]，POM/Gradle metadata 传递 stdlib 1.9.24；consumer rules 保留。三个 ABI 的 ELF LOAD 均为 16384 字节对齐，demo release APK SO 与发布 AAR 一致、未压缩且 ZIP 16 KB 对齐。[产物检查证据](evidence/compat-1.0.1/artifacts.json)
 - 新版 R8 为 8.6.27，NullPointerCrash 改名为 o.X，NativeBridge 保持 JNI 稳定名称；Agent 结构校验通过。SDK XML 工具版本提示及空指针故障实现的 unreachable code 警告未导致构建失败。
 - Kotlin 1.9.24 与该 AGP/Gradle 组合超出旧版完整支持矩阵，上述是实际构建证据。没有承诺更旧的 Kotlin/AGP 宿主全部兼容，没有强制降低宿主的全局 stdlib。真实 16 KB 页面/ARM/采集 SDK 与设备故障本轮未复测；沿用历史设备日志不算新版本运行通过。
-- JitPack 1.0.1 云端构建和匿名消费者下载待推送后验证。本地构建工具版本不等于 AAR 强制要求宿主相同版本，AAR 未声明额外的高 minCompileSdk/minAGP 门禁。
+- 已推送 `16a19db` 与标签 `1.0.1`；JitPack status=ok、jdk=17、private=false，commit 与标签一致，公开 POM 返回 HTTP 200。[云端构建状态](evidence/compat-1.0.1/jitpack-build.json)
+- 匿名下载云端 AAR，34 个类均为 Java 8、三个 ABI 的所有 ELF LOAD 段 16384 字节对齐，consumer rules 完整，公开 POM 的 stdlib 为 1.9.24。独立 Kotlin 1.9.24 / Java 8 / AGP 8.6.1 / Gradle 8.7 消费者改用 compileSdk/targetSdk 33、minSdk 24，从 JitPack 按 Maven 坐标下载 1.0.1，`assembleDebug --refresh-dependencies` 成功，三个公开入口编译及 APK 打包通过；本次未将源码 project 依赖当成远程接入证据。
+- 本地构建工具版本不等于 AAR 强制要求宿主相同版本，AAR 未声明额外的高 minCompileSdk/minAGP 门禁；compileSdk 33 的实际消费者通过，不代表任意更旧环境均验证。README 已同步新版本与兼容范围。
 
 ## 历史：改用 JitPack（2026-10-13）
 
