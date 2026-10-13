@@ -1,6 +1,16 @@
 # lib_crash 测试报告
 
-## 本轮：改用 JitPack（2026-10-13）
+## 本轮：降低第三方接入版本（1.0.1，2026-10-13）
+
+- Kotlin 2.1.21 -> 1.9.24，Java/Kotlin 字节码 17 -> 1.8，AGP 8.13.2 -> 8.6.1，Gradle 9.1.0 -> 8.7，compileSdk 36 -> 35。minSdk 24、API 与故障源码、NDK r27/CMake/16 KB 配置不变；旧标签 1.0.0 不移动、不覆盖。
+- 本地 `:lib_crash:testDebugUnitTest :lib_crash:publishReleasePublicationToMavenLocal :demo:assembleDebug :demo:assembleRelease` 成功，8 项 JVM 测试重新执行、0 失败；Debug 和启用 R8 的 unsigned Release APK 构建通过。首次调用因 PowerShell 拆分未引用的 -P 参数失败，修正引用后完成构建。
+- 独立 Kotlin 1.9.24 / Java 8 / AGP 8.6.1 / compileSdk 35 / minSdk 24 消费者，从发布目录按 Maven 坐标依赖 AAR，统一 Java/Kotlin 入口、Native 入口及独立场景 Kotlin 编译和 Debug APK 打包成功。
+- AAR 的全部 34 个 class major version 为 52（Java 8），CrashUtils 的 Kotlin metadata 为 [1,9,0]，POM/Gradle metadata 传递 stdlib 1.9.24；consumer rules 保留。三个 ABI 的 ELF LOAD 均为 16384 字节对齐，demo release APK SO 与发布 AAR 一致、未压缩且 ZIP 16 KB 对齐。[产物检查证据](evidence/compat-1.0.1/artifacts.json)
+- 新版 R8 为 8.6.27，NullPointerCrash 改名为 o.X，NativeBridge 保持 JNI 稳定名称；Agent 结构校验通过。SDK XML 工具版本提示及空指针故障实现的 unreachable code 警告未导致构建失败。
+- Kotlin 1.9.24 与该 AGP/Gradle 组合超出旧版完整支持矩阵，上述是实际构建证据。没有承诺更旧的 Kotlin/AGP 宿主全部兼容，没有强制降低宿主的全局 stdlib。真实 16 KB 页面/ARM/采集 SDK 与设备故障本轮未复测；沿用历史设备日志不算新版本运行通过。
+- JitPack 1.0.1 云端构建和匿名消费者下载待推送后验证。本地构建工具版本不等于 AAR 强制要求宿主相同版本，AAR 未声明额外的高 minCompileSdk/minAGP 门禁。
+
+## 历史：改用 JitPack（2026-10-13）
 
 - 按用户指定改用 JitPack；删除旧公共 Maven 文件目录，发布坐标改为 `com.github.wukuiqing49:AppCrash:1.0.0`，源码包名不变。新增 jitpack.yml 指定 JDK 17，仅测试并发布 lib_crash，不发布 demo，不使用 GitHub Actions 或下载 Token。
 - `:lib_crash:testDebugUnitTest :lib_crash:publishReleasePublicationToMavenLocal` 本地成功，JVM 测试复用通过输出；新坐标的 AAR/POM/Gradle metadata 已生成。前两次因本机虚拟内存不足未启动 JVM，关闭本项目专用模拟器并以单进程 512 MB 堆重试后成功，没有终止其他项目构建进程。

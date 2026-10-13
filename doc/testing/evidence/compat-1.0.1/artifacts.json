@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "version": "1.0.1",
+  "classCount": 34,
+  "classMajorVersion": 52,
+  "kotlinMetadata": [
+    1,
+    9,
+    0
+  ],
+  "stdlib": "1.9.24",
+  "nativeLoadAlignments": {
+    "jni/arm64-v8a/libcrash_native.so": [
+      16384,
+      16384,
+      16384
+    ],
+    "jni/armeabi-v7a/libcrash_native.so": [
+      16384,
+      16384,
+      16384
+    ],
+    "jni/x86_64/libcrash_native.so": [
+      16384,
+      16384,
+      16384
+    ]
+  },
+  "demoApk16KbAligned": true
+}

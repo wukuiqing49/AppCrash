@@ -24,7 +24,7 @@ Android 崩溃模拟库，库本身无 UI、自动初始化、采集 SDK 或网�
 
 ```groovy
 dependencies {
-    implementation 'com.github.wukuiqing49:AppCrash:1.0.0'
+    implementation 'com.github.wukuiqing49:AppCrash:1.0.1'
 }
 ```
 
@@ -49,7 +49,7 @@ implementation project(':lib_crash')
 
 ## 宿主 R8 混淆
 
-库 AAR 保留 API 名称以供编译，最终 APK/AAB 由宿主统一混淆。将本仓库 `gradle/crash-obfuscation.pro` 复制到宿主 app 模块，按当前 AGP 8.13.2 配置：
+库 AAR 保留 API 名称以供编译，最终 APK/AAB 由宿主统一混淆。将本仓库 `gradle/crash-obfuscation.pro` 复制到宿主 app 模块，按当前 AGP 8.6.1 配置：
 
 ```groovy
 android {
@@ -236,14 +236,14 @@ Native 机制与调试参考：[JNI](https://developer.android.com/ndk/guides/jn
 发布版本时提交源码并推送版本标签：
 
 ```powershell
-git tag 1.0.0
+git tag 1.0.1
 git push origin main
-git push origin 1.0.0
+git push origin 1.0.1
 ```
 
 访问 [JitPack 项目页面](https://jitpack.io/#wukuiqing49/AppCrash)，选择标签并点击 Get it，或请求该版本依赖触发构建。必须等构建成功才能下载。AAR 包含三个 ABI 的 so 与 consumer rules；未剥离 Native 符号留在构建目录，需要自行按版本归档。
 
-更新时修改 libCrash、提交并推送新的标签，例如 1.0.1；调用方同步更新依赖版本。JitPack 构建的版本使用其 VERSION 环境变量与标签一致。不要移动已发布标签。旧 GitHub raw Maven 目录已停用，当前坐标不再是 com.wkq:lib-crash。
+更新时修改 libCrash、提交并推送新的标签，例如 1.0.2；调用方同步更新依赖版本。JitPack 构建的版本使用其 VERSION 环境变量与标签一致。不要移动已发布标签。旧 GitHub raw Maven 目录已停用，当前坐标不再是 com.wkq:lib-crash。
 
 宿主 settings.gradle 的 dependencyResolutionManagement.repositories 增加：
 
@@ -254,11 +254,17 @@ maven {
 }
 ```
 
-宿主模块引用 `implementation 'com.github.wukuiqing49:AppCrash:1.0.0'`。仓库必须为 Public，下载无需 credentials。源码包名仍是 com.wkq.crash，不受 Maven 坐标变化影响。
+宿主模块引用 `implementation 'com.github.wukuiqing49:AppCrash:1.0.1'`。仓库必须为 Public，下载无需 credentials。源码包名仍是 com.wkq.crash，不受 Maven 坐标变化影响。
 
 本机接入可使用 `:lib_crash:publishReleasePublicationToMavenLocal` 配合宿主的 mavenLocal()。发布流程依据 [JitPack Android 文档](https://docs.jitpack.io/android/)。
 
 ## 配置入口
+
+从 1.0.1 起，库使用 Kotlin 1.9.24 编译，Java/Kotlin 字节码目标为 Java 8；发布依赖为 kotlin-stdlib 1.9.24，不再要求 Kotlin 2.1 元数据读取能力。建议宿主使用 Kotlin 1.9.24 或更新版本。宿主依赖图若存在其他库的 Kotlin 2.x 约束，Gradle 仍可能选择更高 stdlib，不应强制降级整个宿主依赖图。
+
+本仓库构建工具为 AGP 8.6.1、Gradle 8.7、JDK 17、compileSdk 35；这是编译本库源码的环境，不要求 AAR 使用者照搬全部版本。宿主仍需满足 minSdk 24、Kotlin 元数据及打包工具兼容条件。NDK r27 与显式 16 KB 配置保留；宿主使用 AGP 8.5.1 或更新版本可正确打包未压缩的 Native 库，仍须检查最终 APK/AAB 的所有 so。
+
+1.0.0 保持原发布内容（Kotlin 2.1.21 / Java 17 字节码），需要较低接入门槛时使用 1.0.1。Kotlin 1.9.24 配合本仓库较新 AGP/Gradle 超出其旧版完整支持矩阵，以实际构建和消费者验证为准，不承诺任意旧版宿主均可接入。
 
 | 文件 | 配置内容 |
 | --- | --- |

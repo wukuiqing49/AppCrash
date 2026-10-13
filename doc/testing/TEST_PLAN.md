@@ -52,6 +52,8 @@
 
 ## JitPack 发布验证
 
+- 修改 Kotlin/Java 编译版本时检查发布 AAR 的 class major version、Kotlin metadata、stdlib 依赖，以及独立 Kotlin 消费者从 Maven 坐标编译调用；不能只验证源码模块引用。当前 1.0.1 目标为 Kotlin 1.9.24 / Java 8，不覆盖旧版本。
+
 - `:lib_crash:testDebugUnitTest :lib_crash:publishReleasePublicationToMavenLocal`：检查 JitPack 所需本地发布，不使用 Actions 或 Token。
 - 发布坐标 `com.github.wukuiqing49:AppCrash:<标签>`；本地默认版本为 libCrash，JitPack 使用 VERSION 环境变量。
 - 验证 POM/AAR/Gradle metadata、三个 ABI、consumer rules。标签推送后请求 JitPack 构建，再执行匿名 Gradle 远程依赖解析，不由本地发布推断云端成功。

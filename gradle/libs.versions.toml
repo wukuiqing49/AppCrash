@@ -1,9 +1,9 @@
 [versions]
-libCrash = "1.0.0"
-agp = "8.13.2"
-kotlin = "2.1.21"
+libCrash = "1.0.1"
+agp = "8.6.1"
+kotlin = "1.9.24"
 junit = "4.13.2"
-compileSdk = "36"
+compileSdk = "35"
 minSdk = "24"
 ndk = "27.0.12077973"
 cmake = "3.22.1"

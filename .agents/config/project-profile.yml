@@ -8,7 +8,7 @@ project:
 # 当前构建与模块事实；设备采集链路未验证。
 android:
   gradleDsl: groovy
-  jvmTarget: 17
+  jvmTarget: '1.8'
   uiToolkit: xml-demo-only
   viewBinding: true
   architecturePattern: independent-library-with-test-app
