@@ -1,0 +1,4 @@
+10-13 04:40:45.278 12562 12562 E lib_crash: scenario=native-runtime-exception runId=native-14b2388ee0804023bd094018df27ba7e thread=main
+10-13 04:40:45.279 12562 12562 E lib_crash: native-entry code=1
+10-13 04:40:45.279 12562 12562 E libc++abi: terminating due to uncaught exception of type std::runtime_error: Intentional native runtime exception
+10-13 04:40:45.279 12562 12562 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 12562 (h.r52694d8a72bc), pid 12562 (h.r52694d8a72bc)

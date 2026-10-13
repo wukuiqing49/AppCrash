@@ -1,0 +1,46 @@
+--------- beginning of main
+10-13 06:55:18.183 11579 11579 I o.rda8397cf35f3: Late-enabling -Xcheck:jni
+10-13 06:55:18.192 11579 11579 W o.rda8397cf35f3: Suspending all threads took: 8.748ms
+10-13 06:55:18.300 11579 11579 I o.rda8397cf35f3: Using CollectorTypeCMC GC.
+10-13 06:55:18.302 11579 11579 W o.rda8397cf35f3: Unexpected CPU variant for x86: x86_64.
+10-13 06:55:18.302 11579 11579 W o.rda8397cf35f3: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, alderlake, default
+10-13 06:55:18.368 11579 11579 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-13 06:55:18.737 11579 11579 D nativeloader: Configuring clns-9 for other apk /data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/lib/x86_64:/data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/verification.crash.demo.rda8397cf35f3
+10-13 06:55:18.764 11579 11579 I o.rda8397cf35f3: AssetManager2(0x77381eb4af18) locale list changing from [] to [en-US]
+10-13 06:55:18.819 11579 11579 V GraphicsEnvironment: Currently set values for:
+10-13 06:55:18.828 11579 11579 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-13 06:55:18.829 11579 11579 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-13 06:55:18.829 11579 11579 V GraphicsEnvironment: verification.crash.demo.rda8397cf35f3 is not listed in per-application setting
+10-13 06:55:18.829 11579 11579 V GraphicsEnvironment: ANGLE allowlist from config: 
+10-13 06:55:18.829 11579 11579 V GraphicsEnvironment: verification.crash.demo.rda8397cf35f3 is not listed in ANGLE allowlist or settings, returning default
+10-13 06:55:18.829 11579 11579 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+--------- beginning of system
+10-13 06:55:18.906 11579 11594 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+10-13 06:55:18.914 11579 11579 I o.rda8397cf35f3: AssetManager2(0x77381eb50cd8) locale list changing from [] to [en-US]
+10-13 06:55:19.010 11579 11579 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+10-13 06:55:19.031 11579 11594 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+10-13 06:55:19.033 11579 11594 I EGL_emulation: Opening libGLESv2_emulation.so
+10-13 06:55:19.052 11579 11594 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-13 06:55:19.163 11579 11579 W HWUI    : Image decoding logging dropped!
+10-13 06:55:19.166 11579 11579 W HWUI    : Image decoding logging dropped!
+10-13 06:55:19.170 11579 11579 W HWUI    : Image decoding logging dropped!
+10-13 06:55:19.208 11579 11579 D CompatChangeReporter: Compat change id reported: 376561342; UID 10215; state: ENABLED
+10-13 06:55:19.238 11579 11579 D CompatChangeReporter: Compat change id reported: 377864165; UID 10215; state: ENABLED
+10-13 06:55:19.244 11579 11579 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+10-13 06:55:19.450 11579 11579 W HWUI    : Unknown dataspace 0
+10-13 06:55:20.633 11579 11601 E SurfaceSyncGroup: Failed to receive transaction ready in 1000ms. Marking SurfaceSyncGroup(wmsSync-VRI[CrashTestActivity]#0) as ready
+10-13 06:55:20.634 11579 11601 E SurfaceSyncGroup: Failed to receive transaction ready in 1000ms. Marking SurfaceSyncGroup(VRI[CrashTestActivity]#1) as ready
+10-13 06:55:20.862 11579 11579 I Choreographer: Skipped 79 frames!  The application may be doing too much work on its main thread.
+10-13 06:55:20.937 11579 11591 I HWUI    : Davey! duration=1435ms; Flags=1, FrameTimelineVsyncId=105708, IntendedVsync=747927759960, Vsync=747961093292, InputEventId=0, HandleInputStart=747974174700, AnimationStart=747974201900, PerformTraversalsStart=747974252600, DrawStart=748077322300, FrameDeadline=747944426626, FrameStartTime=747973947700, FrameInterval=16666666, WorkloadTarget=16666666, SyncQueued=748118924700, SyncStart=748119411200, IssueDrawCommandsStart=748119996500, SwapBuffers=749039677500, FrameCompleted=749364114700, DequeueBufferDuration=629300, QueueBufferDuration=4602100, GpuCompleted=749364114700, SwapBuffersCompleted=749309621200, DisplayPresentTime=0, CommandSubmissionCompleted=749039677500, 
+10-13 06:55:21.073 11579 11579 D InsetsController: hide(ime(), fromIme=false)
+10-13 06:55:21.078 11579 11579 I ImeTracker: verification.crash.demo.rda8397cf35f3:c86be86a: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-13 06:55:22.606 11579 11584 I o.rda8397cf35f3: Compiler allocated 5042KB to compile void android.view.ViewRootImpl.performTraversals()
+10-13 06:55:27.029 11579 11579 D CompatChangeReporter: Compat change id reported: 379365266; UID 10215; state: ENABLED
+10-13 06:55:30.719 11579 11579 D nativeloader: Load /data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk!/lib/x86_64/libcrash_native.so using class loader ns clns-9 (caller=/data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk!classes2.dex): ok
+10-13 06:55:30.728 11579 11579 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.app.Dialog$$ExternalSyntheticLambda2@31d1d04
+10-13 06:55:30.766 11579 11594 D HWUI    : endAllActiveAnimators on 0x77383eb878a0 (RippleDrawable) with handle 0x7737feb91bf0
+10-13 06:55:30.830 11579 11579 E lib_crash: scenario=native-class-cast runId=demo-d1cf864f60d24d4190ea40d6c2f663f3 thread=main
+10-13 06:55:30.830 11579 11579 E lib_crash: native-entry code=6
+10-13 06:55:30.832 11579 11579 E libc++abi: terminating due to uncaught exception of type std::bad_cast: std::bad_cast
+--------- beginning of crash
+10-13 06:55:30.834 11579 11579 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 11579 (o.rda8397cf35f3), pid 11579 (o.rda8397cf35f3)

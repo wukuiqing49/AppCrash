@@ -1,0 +1,63 @@
+--------- beginning of main
+10-13 06:49:25.415  8061  8061 I o.rda8397cf35f3: Late-enabling -Xcheck:jni
+10-13 06:49:25.466  8061  8061 I o.rda8397cf35f3: Using CollectorTypeCMC GC.
+10-13 06:49:25.467  8061  8061 W o.rda8397cf35f3: Unexpected CPU variant for x86: x86_64.
+10-13 06:49:25.467  8061  8061 W o.rda8397cf35f3: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, alderlake, default
+10-13 06:49:25.477  8061  8061 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-13 06:49:25.708  8061  8061 D nativeloader: Configuring clns-9 for other apk /data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/lib/x86_64:/data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/verification.crash.demo.rda8397cf35f3
+10-13 06:49:25.734  8061  8061 I o.rda8397cf35f3: AssetManager2(0x77381eb4af18) locale list changing from [] to [en-US]
+10-13 06:49:25.765  8061  8061 V GraphicsEnvironment: Currently set values for:
+10-13 06:49:25.766  8061  8061 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-13 06:49:25.766  8061  8061 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-13 06:49:25.766  8061  8061 V GraphicsEnvironment: verification.crash.demo.rda8397cf35f3 is not listed in per-application setting
+10-13 06:49:25.766  8061  8061 V GraphicsEnvironment: ANGLE allowlist from config: 
+10-13 06:49:25.766  8061  8061 V GraphicsEnvironment: verification.crash.demo.rda8397cf35f3 is not listed in ANGLE allowlist or settings, returning default
+10-13 06:49:25.767  8061  8061 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+10-13 06:49:25.883  8061  8061 I o.rda8397cf35f3: AssetManager2(0x77381eb4c4f8) locale list changing from [] to [en-US]
+--------- beginning of system
+10-13 06:49:25.885  8061  8074 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+10-13 06:49:26.046  8061  8061 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+10-13 06:49:26.058  8061  8074 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+10-13 06:49:26.059  8061  8074 I EGL_emulation: Opening libGLESv2_emulation.so
+10-13 06:49:26.066  8061  8074 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-13 06:49:26.163  8061  8061 W HWUI    : Image decoding logging dropped!
+10-13 06:49:26.164  8061  8061 W HWUI    : Image decoding logging dropped!
+10-13 06:49:26.165  8061  8061 W HWUI    : Image decoding logging dropped!
+10-13 06:49:26.187  8061  8061 D CompatChangeReporter: Compat change id reported: 376561342; UID 10215; state: ENABLED
+10-13 06:49:26.198  8061  8061 D CompatChangeReporter: Compat change id reported: 377864165; UID 10215; state: ENABLED
+10-13 06:49:26.200  8061  8061 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+10-13 06:49:26.298  8061  8061 W HWUI    : Unknown dataspace 0
+10-13 06:49:26.902  8061  8061 I Choreographer: Skipped 34 frames!  The application may be doing too much work on its main thread.
+10-13 06:49:27.161  8061  8061 D InsetsController: hide(ime(), fromIme=false)
+10-13 06:49:27.162  8061  8061 I ImeTracker: verification.crash.demo.rda8397cf35f3:4f94bc18: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-13 06:49:28.289  8061  8065 I o.rda8397cf35f3: Compiler allocated 5042KB to compile void android.view.ViewRootImpl.performTraversals()
+10-13 06:49:32.256  8061  8061 D CompatChangeReporter: Compat change id reported: 379365266; UID 10215; state: ENABLED
+10-13 06:49:34.908  8061  8061 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.app.Dialog$$ExternalSyntheticLambda2@15f8c44
+10-13 06:49:34.914  8061  8074 D HWUI    : endAllActiveAnimators on 0x77383eb824f0 (RippleDrawable) with handle 0x7737feb92130
+10-13 06:49:34.935  8061  8061 E lib_crash: scenario=list-index-out-of-bounds runId=demo-babbc1e32333445d9b81725ceb6ed19a thread=main
+10-13 06:49:34.941  8061  8061 D AndroidRuntime: Shutting down VM
+--------- beginning of crash
+10-13 06:49:34.963  8061  8061 E AndroidRuntime: FATAL EXCEPTION: main
+10-13 06:49:34.963  8061  8061 E AndroidRuntime: Process: verification.crash.demo.rda8397cf35f3, PID: 8061
+10-13 06:49:34.963  8061  8061 E AndroidRuntime: java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+10-13 06:49:34.963  8061  8061 E AndroidRuntime: 	at jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+10-13 06:49:34.963  8061  8061 E AndroidRuntime: 	at jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+10-13 06:49:34.963  8061  8061 E AndroidRuntime: 	at jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+10-13 06:49:34.963  8061  8061 E AndroidRuntime: 	at java.util.Objects.checkIndex(Objects.java:385)
+10-13 06:49:34.963  8061  8061 E AndroidRuntime: 	at java.util.ArrayList.get(ArrayList.java:434)
+10-13 06:49:34.963  8061  8061 E AndroidRuntime: 	at com.wkq.crash.ListIndexOutOfBoundsCrash.causeCrash$lib_crash_debug(ListIndexOutOfBoundsCrash.kt:6)
+10-13 06:49:34.963  8061  8061 E AndroidRuntime: 	at com.wkq.crash.CrashScenario.trigger$lambda$1(CrashScenario.kt:28)
+10-13 06:49:34.963  8061  8061 E AndroidRuntime: 	at com.wkq.crash.CrashScenario.$r8$lambda$FTHJZ65dvv9HADmPTeLZ3-lOGrQ(Unknown Source:0)
+10-13 06:49:34.963  8061  8061 E AndroidRuntime: 	at com.wkq.crash.CrashScenario$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+10-13 06:49:34.963  8061  8061 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:995)
+10-13 06:49:34.963  8061  8061 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:103)
+10-13 06:49:34.963  8061  8061 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:248)
+10-13 06:49:34.963  8061  8061 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:338)
+10-13 06:49:34.963  8061  8061 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:9067)
+10-13 06:49:34.963  8061  8061 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-13 06:49:34.963  8061  8061 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:593)
+10-13 06:49:34.963  8061  8061 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:932)
+10-13 06:49:34.963  8061  8061 E AndroidRuntime: 	Suppressed: com.wkq.crash.CrashRunMarker: lib_crash scenario=list-index-out-of-bounds runId=demo-babbc1e32333445d9b81725ceb6ed19a
+10-13 06:49:34.963  8061  8061 E AndroidRuntime: 		at com.wkq.crash.CrashScenario.trigger$lambda$1(CrashScenario.kt:31)
+10-13 06:49:34.963  8061  8061 E AndroidRuntime: 		... 10 more
+10-13 06:49:34.976  8061  8061 I Process : Sending signal. PID: 8061 SIG: 9

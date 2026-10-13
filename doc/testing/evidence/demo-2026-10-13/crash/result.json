@@ -1,0 +1,406 @@
+{
+  "status": "passed",
+  "applicationId": "verification.crash.demo.rda8397cf35f3",
+  "checks": [
+    {
+      "id": "startup-mode-thread-cancel",
+      "status": "passed"
+    },
+    {
+      "id": "restart-last-run",
+      "status": "passed"
+    }
+  ],
+  "cases": [
+    {
+      "id": "java-runtime_exception-main",
+      "runId": "demo-4b866ff44287497fa0975fa213861a5f",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1aruntime-exception\n\u9884\u671f\uff1aRuntimeException",
+      "durationSeconds": 2.08,
+      "evidence": "java-runtime_exception-main.log"
+    },
+    {
+      "id": "java-runtime_exception-background",
+      "runId": "demo-1f859661644d408884799c025df67dc4",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1aruntime-exception\n\u9884\u671f\uff1aRuntimeException",
+      "durationSeconds": 17.17,
+      "evidence": "java-runtime_exception-background.log"
+    },
+    {
+      "id": "java-null_pointer-main",
+      "runId": "demo-d044b760804a4818b19a2662a831f41d",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anull-pointer\n\u9884\u671f\uff1aNullPointerException",
+      "durationSeconds": 1.36,
+      "evidence": "java-null_pointer-main.log"
+    },
+    {
+      "id": "java-null_pointer-background",
+      "runId": "demo-0d88cc13684744b2b2e44e44c982cc79",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anull-pointer\n\u9884\u671f\uff1aNullPointerException",
+      "durationSeconds": 1.38,
+      "evidence": "java-null_pointer-background.log"
+    },
+    {
+      "id": "java-array_index_out_of_bounds-main",
+      "runId": "demo-3ce26fd82b5c4d50b0f14e772e2e01f6",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1aarray-index-out-of-bounds\n\u9884\u671f\uff1aArrayIndexOutOfBoundsException",
+      "durationSeconds": 1.06,
+      "evidence": "java-array_index_out_of_bounds-main.log"
+    },
+    {
+      "id": "java-array_index_out_of_bounds-background",
+      "runId": "demo-20ba2f97b3474b9dbf2d43c5ef79eefe",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1aarray-index-out-of-bounds\n\u9884\u671f\uff1aArrayIndexOutOfBoundsException",
+      "durationSeconds": 0.36,
+      "evidence": "java-array_index_out_of_bounds-background.log"
+    },
+    {
+      "id": "java-list_index_out_of_bounds-main",
+      "runId": "demo-babbc1e32333445d9b81725ceb6ed19a",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1alist-index-out-of-bounds\n\u9884\u671f\uff1aIndexOutOfBoundsException",
+      "durationSeconds": 0.97,
+      "evidence": "java-list_index_out_of_bounds-main.log"
+    },
+    {
+      "id": "java-list_index_out_of_bounds-background",
+      "runId": "demo-80e95214453148e0ae405cbfc196e08e",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1alist-index-out-of-bounds\n\u9884\u671f\uff1aIndexOutOfBoundsException",
+      "durationSeconds": 1.11,
+      "evidence": "java-list_index_out_of_bounds-background.log"
+    },
+    {
+      "id": "java-string_index_out_of_bounds-main",
+      "runId": "demo-4d611abd827a475494db06a436dc8ef8",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1astring-index-out-of-bounds\n\u9884\u671f\uff1aIndexOutOfBoundsException",
+      "durationSeconds": 0.86,
+      "evidence": "java-string_index_out_of_bounds-main.log"
+    },
+    {
+      "id": "java-string_index_out_of_bounds-background",
+      "runId": "demo-113341dc3dcb4e57a50750299a93ffbc",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1astring-index-out-of-bounds\n\u9884\u671f\uff1aIndexOutOfBoundsException",
+      "durationSeconds": 0.99,
+      "evidence": "java-string_index_out_of_bounds-background.log"
+    },
+    {
+      "id": "java-class_cast-main",
+      "runId": "demo-5e045318b7d943f0b61c7cad0e18e89f",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1aclass-cast\n\u9884\u671f\uff1aClassCastException",
+      "durationSeconds": 15.81,
+      "evidence": "java-class_cast-main.log"
+    },
+    {
+      "id": "java-class_cast-background",
+      "runId": "demo-c44a1e01eab049e897dd0eb441bb1c4e",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1aclass-cast\n\u9884\u671f\uff1aClassCastException",
+      "durationSeconds": 0.98,
+      "evidence": "java-class_cast-background.log"
+    },
+    {
+      "id": "java-integer_division_by_zero-main",
+      "runId": "demo-0c26a14c32c845cf8a0a5cbd3a97d116",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1ainteger-division-by-zero\n\u9884\u671f\uff1aArithmeticException",
+      "durationSeconds": 1.22,
+      "evidence": "java-integer_division_by_zero-main.log"
+    },
+    {
+      "id": "java-integer_division_by_zero-background",
+      "runId": "demo-86bab95104f14f73bdeda047ef2f151d",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1ainteger-division-by-zero\n\u9884\u671f\uff1aArithmeticException",
+      "durationSeconds": 1.2,
+      "evidence": "java-integer_division_by_zero-background.log"
+    },
+    {
+      "id": "java-number_format-main",
+      "runId": "demo-6711634bab0e44df8889d91c6e455ed8",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anumber-format\n\u9884\u671f\uff1aNumberFormatException",
+      "durationSeconds": 1.14,
+      "evidence": "java-number_format-main.log"
+    },
+    {
+      "id": "java-number_format-background",
+      "runId": "demo-8ffe8fccecac426cbdd2c8ef85abdbc5",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anumber-format\n\u9884\u671f\uff1aNumberFormatException",
+      "durationSeconds": 1.64,
+      "evidence": "java-number_format-background.log"
+    },
+    {
+      "id": "java-illegal_argument-main",
+      "runId": "demo-1b8eaf862a654b0fbfc303ee5200516e",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1aillegal-argument\n\u9884\u671f\uff1aIllegalArgumentException",
+      "durationSeconds": 1.11,
+      "evidence": "java-illegal_argument-main.log"
+    },
+    {
+      "id": "java-illegal_argument-background",
+      "runId": "demo-290e094891a4415c9b0afcab6086a5a6",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1aillegal-argument\n\u9884\u671f\uff1aIllegalArgumentException",
+      "durationSeconds": 1.34,
+      "evidence": "java-illegal_argument-background.log"
+    },
+    {
+      "id": "java-illegal_state-main",
+      "runId": "demo-d937e635d2f3485ab5349a3af12f84c2",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1aillegal-state\n\u9884\u671f\uff1aIllegalStateException",
+      "durationSeconds": 1.23,
+      "evidence": "java-illegal_state-main.log"
+    },
+    {
+      "id": "java-illegal_state-background",
+      "runId": "demo-415dcf8b1df24577b58be88e162ca8ab",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1aillegal-state\n\u9884\u671f\uff1aIllegalStateException",
+      "durationSeconds": 16.56,
+      "evidence": "java-illegal_state-background.log"
+    },
+    {
+      "id": "java-uninitialized_property-main",
+      "runId": "demo-eb10ee072c7148b29e08c87b28f3b5a3",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1auninitialized-lateinit-property\n\u9884\u671f\uff1aUninitializedPropertyAccessException",
+      "durationSeconds": 1.22,
+      "evidence": "java-uninitialized_property-main.log"
+    },
+    {
+      "id": "java-uninitialized_property-background",
+      "runId": "demo-066dd4190e2241f684c8ba7586345909",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1auninitialized-lateinit-property\n\u9884\u671f\uff1aUninitializedPropertyAccessException",
+      "durationSeconds": 0.97,
+      "evidence": "java-uninitialized_property-background.log"
+    },
+    {
+      "id": "native-runtime_exception-main",
+      "runId": "demo-aeba45d6ccdb40deabdcc9bc23cfbb78",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-runtime-exception\n\u9884\u671f\uff1aSIGABRT",
+      "durationSeconds": 1.97,
+      "evidence": "native-runtime_exception-main.log"
+    },
+    {
+      "id": "native-runtime_exception-background",
+      "runId": "demo-874deeef4fa54b8bb38a5f9f337e21dc",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-runtime-exception\n\u9884\u671f\uff1aSIGABRT",
+      "durationSeconds": 1.47,
+      "evidence": "native-runtime_exception-background.log"
+    },
+    {
+      "id": "native-null_pointer-main",
+      "runId": "demo-76a64a812bf24b55b8718c2d61a5db16",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-null-pointer\n\u9884\u671f\uff1aSIGSEGV",
+      "durationSeconds": 0.67,
+      "evidence": "native-null_pointer-main.log"
+    },
+    {
+      "id": "native-null_pointer-background",
+      "runId": "demo-938be83b6bec4ef5862468ba8839426e",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-null-pointer\n\u9884\u671f\uff1aSIGSEGV",
+      "durationSeconds": 1.48,
+      "evidence": "native-null_pointer-background.log"
+    },
+    {
+      "id": "native-array_index_out_of_bounds-main",
+      "runId": "demo-2b8a70671b3f4c7bacf4825d5da6b4e2",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-array-index-out-of-bounds\n\u9884\u671f\uff1aSIGSEGV",
+      "durationSeconds": 0.76,
+      "evidence": "native-array_index_out_of_bounds-main.log"
+    },
+    {
+      "id": "native-array_index_out_of_bounds-background",
+      "runId": "demo-14389cb860c74239995a5857e9e2c6ad",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-array-index-out-of-bounds\n\u9884\u671f\uff1aSIGSEGV",
+      "durationSeconds": 1.33,
+      "evidence": "native-array_index_out_of_bounds-background.log"
+    },
+    {
+      "id": "native-list_index_out_of_bounds-main",
+      "runId": "demo-b2a93f4b71fc4439b1cb32417122bdf3",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-list-index-out-of-bounds\n\u9884\u671f\uff1aSIGABRT",
+      "durationSeconds": 1.75,
+      "evidence": "native-list_index_out_of_bounds-main.log"
+    },
+    {
+      "id": "native-list_index_out_of_bounds-background",
+      "runId": "demo-9e614751dbb244e796ead19c642d81f0",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-list-index-out-of-bounds\n\u9884\u671f\uff1aSIGABRT",
+      "durationSeconds": 1.72,
+      "evidence": "native-list_index_out_of_bounds-background.log"
+    },
+    {
+      "id": "native-string_index_out_of_bounds-main",
+      "runId": "demo-b628534bf593405084b112da02423046",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-string-index-out-of-bounds\n\u9884\u671f\uff1aSIGABRT",
+      "durationSeconds": 2.27,
+      "evidence": "native-string_index_out_of_bounds-main.log"
+    },
+    {
+      "id": "native-string_index_out_of_bounds-background",
+      "runId": "demo-1ead266c96524040a05afd2ae3637819",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-string-index-out-of-bounds\n\u9884\u671f\uff1aSIGABRT",
+      "durationSeconds": 2.14,
+      "evidence": "native-string_index_out_of_bounds-background.log"
+    },
+    {
+      "id": "native-class_cast-main",
+      "runId": "demo-d1cf864f60d24d4190ea40d6c2f663f3",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-class-cast\n\u9884\u671f\uff1aSIGABRT",
+      "durationSeconds": 2.08,
+      "evidence": "native-class_cast-main.log"
+    },
+    {
+      "id": "native-class_cast-background",
+      "runId": "demo-7085201148c14abeb2db1b64d9c9aa11",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-class-cast\n\u9884\u671f\uff1aSIGABRT",
+      "durationSeconds": 0.64,
+      "evidence": "native-class_cast-background.log"
+    },
+    {
+      "id": "native-integer_division_by_zero-main",
+      "runId": "demo-d31d27ecb6314c8f99fbfef7aa7b2f12",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-integer-division-by-zero\n\u9884\u671f\uff1aSIGFPE",
+      "durationSeconds": 0.81,
+      "evidence": "native-integer_division_by_zero-main.log"
+    },
+    {
+      "id": "native-integer_division_by_zero-background",
+      "runId": "demo-06a7934788dd412a9eb16099b30a7e96",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-integer-division-by-zero\n\u9884\u671f\uff1aSIGFPE",
+      "durationSeconds": 1.19,
+      "evidence": "native-integer_division_by_zero-background.log"
+    },
+    {
+      "id": "native-number_format-main",
+      "runId": "demo-4c8dcb0d62d844b5b4e4e0b553e760a2",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-number-format\n\u9884\u671f\uff1aSIGABRT",
+      "durationSeconds": 0.66,
+      "evidence": "native-number_format-main.log"
+    },
+    {
+      "id": "native-number_format-background",
+      "runId": "demo-359c025bb4bc440ab199521b1704a27f",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-number-format\n\u9884\u671f\uff1aSIGABRT",
+      "durationSeconds": 0.66,
+      "evidence": "native-number_format-background.log"
+    },
+    {
+      "id": "native-illegal_argument-main",
+      "runId": "demo-ccdb441bdf9a40cbb2a614dea8748bdd",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-illegal-argument\n\u9884\u671f\uff1aSIGABRT",
+      "durationSeconds": 0.69,
+      "evidence": "native-illegal_argument-main.log"
+    },
+    {
+      "id": "native-illegal_argument-background",
+      "runId": "demo-33f1604f7898477eaeddfc15040a2a8b",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-illegal-argument\n\u9884\u671f\uff1aSIGABRT",
+      "durationSeconds": 1.17,
+      "evidence": "native-illegal_argument-background.log"
+    },
+    {
+      "id": "native-illegal_state-main",
+      "runId": "demo-5ba0a614f7374be18fc0e3d1ccea470b",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-illegal-state\n\u9884\u671f\uff1aSIGABRT",
+      "durationSeconds": 0.78,
+      "evidence": "native-illegal_state-main.log"
+    },
+    {
+      "id": "native-illegal_state-background",
+      "runId": "demo-81a41b9aa2bb4f89b2108ef4cb6134ee",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-illegal-state\n\u9884\u671f\uff1aSIGABRT",
+      "durationSeconds": 1.25,
+      "evidence": "native-illegal_state-background.log"
+    },
+    {
+      "id": "native-uninitialized_property-main",
+      "runId": "demo-5f78a23f7d6e42af8f80f2a21972f45e",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-uninitialized-property\n\u9884\u671f\uff1aSIGABRT",
+      "durationSeconds": 0.7,
+      "evidence": "native-uninitialized_property-main.log"
+    },
+    {
+      "id": "native-uninitialized_property-background",
+      "runId": "demo-efb36c200c5e4a469d26ce026e761b7b",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-uninitialized-property\n\u9884\u671f\uff1aSIGABRT",
+      "durationSeconds": 2.2,
+      "evidence": "native-uninitialized_property-background.log"
+    },
+    {
+      "id": "native-abort-main",
+      "runId": "demo-cc5c2088720c4a3abfeb8ee549601d70",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-abort\n\u9884\u671f\uff1aSIGABRT",
+      "durationSeconds": 2.95,
+      "evidence": "native-abort-main.log"
+    },
+    {
+      "id": "native-abort-background",
+      "runId": "demo-32961b520a6c4eaea4d85a593eab3528",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-abort\n\u9884\u671f\uff1aSIGABRT",
+      "durationSeconds": 3.55,
+      "evidence": "native-abort-background.log"
+    },
+    {
+      "id": "native-segmentation_fault-main",
+      "runId": "demo-3e9c2140c3f84961946b8aef6debffc0",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-segmentation-fault\n\u9884\u671f\uff1aSIGSEGV",
+      "durationSeconds": 2.7,
+      "evidence": "native-segmentation_fault-main.log"
+    },
+    {
+      "id": "native-segmentation_fault-background",
+      "runId": "demo-fc1eeb8a117944809b5d27904488a183",
+      "status": "passed",
+      "scenarioDetails": "\u573a\u666f ID\uff1anative-segmentation-fault\n\u9884\u671f\uff1aSIGSEGV",
+      "durationSeconds": 1.98,
+      "evidence": "native-segmentation_fault-background.log"
+    }
+  ],
+  "scope": "Debug demo UI and fault/process behavior; no collection SDK",
+  "api": "36",
+  "abi": "x86_64",
+  "pageSize": "4096",
+  "apkSha256": "a95c710a4ead2ad85f07ed6caaa9698abb2fb848871105ef21e586089649aa2b",
+  "fixtureRemoved": true
+}

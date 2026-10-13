@@ -1,0 +1,50 @@
+--------- beginning of main
+10-13 06:48:50.824  7386  7386 I o.rda8397cf35f3: Late-enabling -Xcheck:jni
+10-13 06:48:50.959  7386  7386 I o.rda8397cf35f3: Using CollectorTypeCMC GC.
+10-13 06:48:50.961  7386  7386 W o.rda8397cf35f3: Unexpected CPU variant for x86: x86_64.
+10-13 06:48:50.961  7386  7386 W o.rda8397cf35f3: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, alderlake, default
+10-13 06:48:50.991  7386  7386 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-13 06:48:51.300  7386  7386 D nativeloader: Configuring clns-9 for other apk /data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/lib/x86_64:/data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/verification.crash.demo.rda8397cf35f3
+10-13 06:48:51.319  7386  7386 I o.rda8397cf35f3: AssetManager2(0x77381eb4af18) locale list changing from [] to [en-US]
+10-13 06:48:51.330  7386  7386 V GraphicsEnvironment: Currently set values for:
+10-13 06:48:51.330  7386  7386 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-13 06:48:51.330  7386  7386 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-13 06:48:51.330  7386  7386 V GraphicsEnvironment: verification.crash.demo.rda8397cf35f3 is not listed in per-application setting
+10-13 06:48:51.331  7386  7386 V GraphicsEnvironment: ANGLE allowlist from config: 
+10-13 06:48:51.331  7386  7386 V GraphicsEnvironment: verification.crash.demo.rda8397cf35f3 is not listed in ANGLE allowlist or settings, returning default
+10-13 06:48:51.331  7386  7386 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+--------- beginning of system
+10-13 06:48:51.360  7386  7414 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+10-13 06:48:51.373  7386  7386 I o.rda8397cf35f3: AssetManager2(0x77381eb50cd8) locale list changing from [] to [en-US]
+10-13 06:48:51.433  7386  7414 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+10-13 06:48:51.435  7386  7414 I EGL_emulation: Opening libGLESv2_emulation.so
+10-13 06:48:51.441  7386  7386 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+10-13 06:48:51.445  7386  7414 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-13 06:48:51.531  7386  7386 W HWUI    : Image decoding logging dropped!
+10-13 06:48:51.533  7386  7386 W HWUI    : Image decoding logging dropped!
+10-13 06:48:51.535  7386  7386 W HWUI    : Image decoding logging dropped!
+10-13 06:48:51.555  7386  7386 D CompatChangeReporter: Compat change id reported: 376561342; UID 10215; state: ENABLED
+10-13 06:48:51.572  7386  7386 D CompatChangeReporter: Compat change id reported: 377864165; UID 10215; state: ENABLED
+10-13 06:48:51.575  7386  7386 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+10-13 06:48:51.717  7386  7386 W HWUI    : Unknown dataspace 0
+10-13 06:48:52.267  7386  7386 I Choreographer: Skipped 31 frames!  The application may be doing too much work on its main thread.
+10-13 06:48:52.582  7386  7386 D InsetsController: hide(ime(), fromIme=false)
+10-13 06:48:52.584  7386  7386 I ImeTracker: verification.crash.demo.rda8397cf35f3:a9ab07c4: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-13 06:48:53.925  7386  7391 I o.rda8397cf35f3: Compiler allocated 5042KB to compile void android.view.ViewRootImpl.performTraversals()
+10-13 06:48:57.784  7386  7386 D CompatChangeReporter: Compat change id reported: 379365266; UID 10215; state: ENABLED
+10-13 06:49:00.882  7386  7386 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.app.Dialog$$ExternalSyntheticLambda2@4284be4
+10-13 06:49:00.908  7386  7799 E lib_crash: scenario=null-pointer runId=demo-0d88cc13684744b2b2e44e44c982cc79 thread=lib_crash-null-pointer
+--------- beginning of crash
+10-13 06:49:00.924  7386  7799 E AndroidRuntime: FATAL EXCEPTION: lib_crash-null-pointer
+10-13 06:49:00.924  7386  7799 E AndroidRuntime: Process: verification.crash.demo.rda8397cf35f3, PID: 7386
+10-13 06:49:00.924  7386  7799 E AndroidRuntime: java.lang.NullPointerException
+10-13 06:49:00.924  7386  7799 E AndroidRuntime: 	at com.wkq.crash.NullPointerCrash.causeCrash$lib_crash_debug(NullPointerCrash.kt:6)
+10-13 06:49:00.924  7386  7799 E AndroidRuntime: 	at com.wkq.crash.CrashScenario.trigger$lambda$1(CrashScenario.kt:28)
+10-13 06:49:00.924  7386  7799 E AndroidRuntime: 	at com.wkq.crash.CrashScenario.$r8$lambda$FTHJZ65dvv9HADmPTeLZ3-lOGrQ(Unknown Source:0)
+10-13 06:49:00.924  7386  7799 E AndroidRuntime: 	at com.wkq.crash.CrashScenario$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+10-13 06:49:00.924  7386  7799 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:1119)
+10-13 06:49:00.924  7386  7799 E AndroidRuntime: 	Suppressed: com.wkq.crash.CrashRunMarker: lib_crash scenario=null-pointer runId=demo-0d88cc13684744b2b2e44e44c982cc79
+10-13 06:49:00.924  7386  7799 E AndroidRuntime: 		at com.wkq.crash.CrashScenario.trigger$lambda$1(CrashScenario.kt:31)
+10-13 06:49:00.924  7386  7799 E AndroidRuntime: 		... 3 more
+10-13 06:49:00.939  7386  7414 D HWUI    : endAllActiveAnimators on 0x77383eb84520 (RippleDrawable) with handle 0x7737feb915c0
+10-13 06:49:01.243  7386  7799 I Process : Sending signal. PID: 7386 SIG: 9

@@ -1,0 +1,8 @@
+/.gradle/
+/.kotlin/
+/.idea/
+/local.properties
+/**/build/
+**/__pycache__/
+**/hs_err_pid*.log
+**/.cxx/

@@ -1,0 +1,4 @@
+10-13 04:41:02.162 13406 13423 E lib_crash: scenario=native-number-format runId=native-4dd2c44d248b479092dc35a4efdf13cb thread=lib_crash-native-number-format
+10-13 04:41:02.162 13406 13423 E lib_crash: native-entry code=8
+10-13 04:41:02.163 13406 13423 E libc++abi: terminating due to uncaught exception of type std::invalid_argument: stoi: no conversion
+10-13 04:41:02.163 13406 13423 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 13423 (lib_crash-nativ), pid 13406 (h.r52694d8a72bc)

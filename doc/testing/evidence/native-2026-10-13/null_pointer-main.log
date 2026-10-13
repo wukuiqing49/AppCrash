@@ -1,0 +1,3 @@
+10-13 04:40:48.193 12738 12738 E lib_crash: scenario=native-null-pointer runId=native-f68c41e2c882484084bd2b560974e8ca thread=main
+10-13 04:40:48.194 12738 12738 E lib_crash: native-entry code=2
+10-13 04:40:48.194 12738 12738 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 12738 (h.r52694d8a72bc), pid 12738 (h.r52694d8a72bc)

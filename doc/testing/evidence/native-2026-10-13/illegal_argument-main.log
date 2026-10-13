@@ -1,0 +1,4 @@
+10-13 04:41:03.375 13458 13458 E lib_crash: scenario=native-illegal-argument runId=native-642ea600e7284c7fbed431133b098c40 thread=main
+10-13 04:41:03.375 13458 13458 E lib_crash: native-entry code=9
+10-13 04:41:03.375 13458 13458 E libc++abi: terminating due to uncaught exception of type std::invalid_argument: Intentional negative argument
+10-13 04:41:03.375 13458 13458 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 13458 (h.r52694d8a72bc), pid 13458 (h.r52694d8a72bc)

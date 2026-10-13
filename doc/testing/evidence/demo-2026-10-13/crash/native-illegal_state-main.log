@@ -1,0 +1,41 @@
+--------- beginning of main
+10-13 06:56:42.792 12560 12560 I o.rda8397cf35f3: Late-enabling -Xcheck:jni
+10-13 06:56:42.847 12560 12560 I o.rda8397cf35f3: Using CollectorTypeCMC GC.
+10-13 06:56:42.847 12560 12560 W o.rda8397cf35f3: Unexpected CPU variant for x86: x86_64.
+10-13 06:56:42.847 12560 12560 W o.rda8397cf35f3: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, alderlake, default
+10-13 06:56:42.861 12560 12560 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-13 06:56:43.091 12560 12560 D nativeloader: Configuring clns-9 for other apk /data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/lib/x86_64:/data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/verification.crash.demo.rda8397cf35f3
+10-13 06:56:43.101 12560 12560 I o.rda8397cf35f3: AssetManager2(0x77381eb4af18) locale list changing from [] to [en-US]
+10-13 06:56:43.132 12560 12560 V GraphicsEnvironment: Currently set values for:
+10-13 06:56:43.132 12560 12560 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-13 06:56:43.143 12560 12560 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-13 06:56:43.144 12560 12560 V GraphicsEnvironment: verification.crash.demo.rda8397cf35f3 is not listed in per-application setting
+10-13 06:56:43.145 12560 12560 V GraphicsEnvironment: ANGLE allowlist from config: 
+10-13 06:56:43.145 12560 12560 V GraphicsEnvironment: verification.crash.demo.rda8397cf35f3 is not listed in ANGLE allowlist or settings, returning default
+10-13 06:56:43.145 12560 12560 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+--------- beginning of system
+10-13 06:56:43.225 12560 12574 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+10-13 06:56:43.243 12560 12560 I o.rda8397cf35f3: AssetManager2(0x77381eb55e18) locale list changing from [] to [en-US]
+10-13 06:56:43.318 12560 12574 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+10-13 06:56:43.318 12560 12574 I EGL_emulation: Opening libGLESv2_emulation.so
+10-13 06:56:43.319 12560 12560 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+10-13 06:56:43.326 12560 12574 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-13 06:56:43.397 12560 12560 W HWUI    : Image decoding logging dropped!
+10-13 06:56:43.399 12560 12560 W HWUI    : Image decoding logging dropped!
+10-13 06:56:43.400 12560 12560 W HWUI    : Image decoding logging dropped!
+10-13 06:56:43.412 12560 12560 D CompatChangeReporter: Compat change id reported: 376561342; UID 10215; state: ENABLED
+10-13 06:56:43.426 12560 12560 D CompatChangeReporter: Compat change id reported: 377864165; UID 10215; state: ENABLED
+10-13 06:56:43.427 12560 12560 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+10-13 06:56:43.532 12560 12560 W HWUI    : Unknown dataspace 0
+10-13 06:56:44.181 12560 12560 D InsetsController: hide(ime(), fromIme=false)
+10-13 06:56:44.202 12560 12560 I ImeTracker: verification.crash.demo.rda8397cf35f3:41febc30: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-13 06:56:44.827 12560 12565 I o.rda8397cf35f3: Compiler allocated 5042KB to compile void android.view.ViewRootImpl.performTraversals()
+10-13 06:56:48.573 12560 12560 D CompatChangeReporter: Compat change id reported: 379365266; UID 10215; state: ENABLED
+10-13 06:56:51.062 12560 12560 D nativeloader: Load /data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk!/lib/x86_64/libcrash_native.so using class loader ns clns-9 (caller=/data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk!classes2.dex): ok
+10-13 06:56:51.063 12560 12560 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.app.Dialog$$ExternalSyntheticLambda2@31d1d04
+10-13 06:56:51.074 12560 12574 D HWUI    : endAllActiveAnimators on 0x77383eb82b60 (RippleDrawable) with handle 0x7737feb925e0
+10-13 06:56:51.098 12560 12560 E lib_crash: scenario=native-illegal-state runId=demo-5ba0a614f7374be18fc0e3d1ccea470b thread=main
+10-13 06:56:51.098 12560 12560 E lib_crash: native-entry code=10
+10-13 06:56:51.099 12560 12560 E libc++abi: terminating due to uncaught exception of type std::logic_error: Intentional invalid state
+--------- beginning of crash
+10-13 06:56:51.103 12560 12560 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 12560 (o.rda8397cf35f3), pid 12560 (o.rda8397cf35f3)

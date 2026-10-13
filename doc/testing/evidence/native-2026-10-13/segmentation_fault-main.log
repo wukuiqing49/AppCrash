@@ -1,0 +1,3 @@
+10-13 04:41:12.369 13867 13867 E lib_crash: scenario=native-segmentation-fault runId=native-aacf585f8ae343b48e8861495e3e4037 thread=main
+10-13 04:41:12.369 13867 13867 E lib_crash: native-entry code=13
+10-13 04:41:12.369 13867 13867 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x7a3899667000 in tid 13867 (h.r52694d8a72bc), pid 13867 (h.r52694d8a72bc)

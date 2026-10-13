@@ -1,0 +1,72 @@
+schemaVersion: 1
+
+project:
+  name: AppCrash
+  description: lib_crash Android Library 与独立 demo 崩溃测试页面
+  lifecycle: initialized
+
+# 当前构建与模块事实；设备采集链路未验证。
+android:
+  gradleDsl: groovy
+  jvmTarget: 17
+  uiToolkit: xml-demo-only
+  viewBinding: true
+  architecturePattern: independent-library-with-test-app
+modules:
+  crashLibrary: lib_crash
+  testApp: demo
+frameworks:
+  active: []
+resources:
+  ownership: module-local
+native:
+  library: crash_native
+  abis: [armeabi-v7a, arm64-v8a, x86_64]
+  buildSystem: cmake
+  runtime: c++_static
+  testedDeviceAbi: x86_64
+  testedDeviceApi: 36
+  nativeCases: 13
+sourceOfTruth:
+  projectScope: AGENTS.md
+  crashTestingRules: .agents/rules/crash-testing.md
+  dependencyVersions: gradle/libs.versions.toml
+  gradleWrapper: gradle/wrapper/gradle-wrapper.properties
+  moduleGraph: settings.gradle
+  moduleBuildFiles: '**/build.gradle'
+validation:
+  moduleGraph: .\gradlew.bat projects
+  debugBuild: .\gradlew.bat :lib_crash:assembleDebug
+  demoBuild: .\gradlew.bat :demo:assembleDebug
+  demoDevice: python scripts/verify_demo_device.py --serial <selected-device>
+  unitTest: .\gradlew.bat :lib_crash:testDebugUnitTest
+  releaseObfuscation: python scripts/verify_r8.py
+  nativeArtifacts: python scripts/verify_native_artifacts.py
+
+# 规划不构成实现或通过证据。
+planned:
+  primaryLanguage: kotlin
+  compatibleLanguages: [kotlin, java]
+  moduleRoles: [crash-library, test-app]
+  libraryModule: lib_crash
+  createDemoApp: true
+  deviceTestHost: existing-or-explicitly-selected-test-app
+  libraryRequiresWkq: false
+  integrationConfiguration: implementation
+  excludeFromRelease: false
+  releaseObfuscation: host-r8-with-mapping
+  phase1Threads: [main, background]
+  phase1Faults:
+    - explicit-runtime-exception
+    - null-pointer
+    - array-index-out-of-bounds
+    - list-index-out-of-bounds
+    - string-index-out-of-bounds
+    - class-cast
+    - integer-division-by-zero
+    - number-format
+    - illegal-argument
+    - illegal-state
+    - uninitialized-lateinit-property
+  optionalFaults: [coroutine-exception, anr, oom, stack-overflow, process-termination]
+  report: doc/testing/TEST_REPORT.md

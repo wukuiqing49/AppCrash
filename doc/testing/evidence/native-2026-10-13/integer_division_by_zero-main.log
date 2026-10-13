@@ -1,0 +1,3 @@
+10-13 04:40:59.122 13252 13252 E lib_crash: scenario=native-integer-division-by-zero runId=native-0babe7154e8d493e858d44a651f9d2af thread=main
+10-13 04:40:59.122 13252 13252 E lib_crash: native-entry code=7
+10-13 04:40:59.123 13252 13252 F libc    : Fatal signal 8 (SIGFPE), code -6 (SI_TKILL) in tid 13252 (h.r52694d8a72bc), pid 13252 (h.r52694d8a72bc)

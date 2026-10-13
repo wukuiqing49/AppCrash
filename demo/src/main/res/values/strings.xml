@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AppCrash 测试</string>
+    <string name="page_title">崩溃测试</string>
+    <string name="mode_label">故障类型</string>
+    <string name="mode_java">Java / Kotlin</string>
+    <string name="mode_native">Native / SO</string>
+    <string name="scenario_label">测试场景</string>
+    <string name="thread_label">触发线程</string>
+    <string name="thread_main">主线程</string>
+    <string name="thread_background">后台线程</string>
+    <string name="trigger">触发崩溃</string>
+    <string name="run_id_label">运行 ID（可选）</string>
+    <string name="run_id_hint">留空时自动生成</string>
+    <string name="confirm_title">确认触发崩溃</string>
+    <string name="confirm_message">%1$s\n%2$s\n\n确认后测试进程将发生故障。</string>
+    <string name="confirm_trigger">确认触发</string>
+    <string name="cancel">取消</string>
+    <string name="scenario_details">场景 ID：%1$s\n预期：%2$s</string>
+    <string name="last_run_label">上次触发记录</string>
+    <string name="no_last_run">暂无记录</string>
+    <string name="last_run_details">%1$s\n%2$s · %3$s\n运行 ID：%4$s\n时间：%5$s</string>
+    <string name="prepare_failed">准备失败</string>
+    <string name="save_failed">无法保存运行记录，未触发故障。</string>
+    <string name="unknown_error">未知错误</string>
+    <string-array name="scenario_names">
+        <item>主动异常</item><item>空指针</item><item>数组下标越界</item>
+        <item>集合下标越界</item><item>字符串下标越界</item><item>类型转换失败</item>
+        <item>整数除零</item><item>数字解析失败</item><item>非法参数</item>
+        <item>非法状态</item><item>未初始化属性</item><item>主动 abort</item><item>非法内存访问</item>
+    </string-array>
+</resources>

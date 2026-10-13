@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "libraries": {
+    "jni/arm64-v8a/libcrash_native.so": {
+      "loadAlignments": [
+        16384,
+        16384,
+        16384
+      ],
+      "exports": [
+        "JNI_OnLoad"
+      ],
+      "size": 228088
+    },
+    "jni/armeabi-v7a/libcrash_native.so": {
+      "loadAlignments": [
+        16384,
+        16384,
+        16384
+      ],
+      "exports": [
+        "JNI_OnLoad"
+      ],
+      "size": 129140
+    },
+    "jni/x86_64/libcrash_native.so": {
+      "loadAlignments": [
+        16384,
+        16384,
+        16384
+      ],
+      "exports": [
+        "JNI_OnLoad"
+      ],
+      "size": 215264
+    }
+  },
+  "apk16KbAligned": true
+}

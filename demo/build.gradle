@@ -1,0 +1,31 @@
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+}
+
+android {
+    namespace 'com.wkq.crash.demo'
+    compileSdk libs.versions.compileSdk.get().toInteger()
+    defaultConfig {
+        applicationId providers.gradleProperty('demoApplicationId').getOrElse('com.wkq.crash.demo')
+        minSdk libs.versions.minSdk.get().toInteger()
+        targetSdk libs.versions.compileSdk.get().toInteger()
+        versionCode 1
+        versionName libs.versions.libCrash.get()
+    }
+    buildFeatures { viewBinding true; buildConfig true }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),
+                '../gradle/crash-obfuscation.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions { jvmTarget = '17' }
+}
+
+dependencies { implementation project(':lib_crash') }

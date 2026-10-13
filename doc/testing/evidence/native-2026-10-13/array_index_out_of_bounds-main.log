@@ -1,0 +1,3 @@
+10-13 04:40:50.139 12839 12839 E lib_crash: scenario=native-array-index-out-of-bounds runId=native-a4c0ca9ea74842ae81b73aa21c44abd6 thread=main
+10-13 04:40:50.139 12839 12839 E lib_crash: native-entry code=3
+10-13 04:40:50.139 12839 12839 F libc    : Fatal signal 11 (SIGSEGV), code 2 (SEGV_ACCERR), fault addr 0x7a389966a000 in tid 12839 (h.r52694d8a72bc), pid 12839 (h.r52694d8a72bc)

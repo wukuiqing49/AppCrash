@@ -1,0 +1,50 @@
+--------- beginning of main
+10-13 06:57:25.484 13039 13039 I o.rda8397cf35f3: Late-enabling -Xcheck:jni
+10-13 06:57:25.497 13039 13039 W o.rda8397cf35f3: Suspending all threads took: 12.814ms
+10-13 06:57:25.569 13039 13039 I o.rda8397cf35f3: Using CollectorTypeCMC GC.
+10-13 06:57:25.570 13039 13039 W o.rda8397cf35f3: Unexpected CPU variant for x86: x86_64.
+10-13 06:57:25.570 13039 13039 W o.rda8397cf35f3: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, alderlake, default
+10-13 06:57:25.629 13039 13039 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-13 06:57:26.272 13039 13039 D nativeloader: Configuring clns-9 for other apk /data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/lib/x86_64:/data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/verification.crash.demo.rda8397cf35f3
+10-13 06:57:26.316 13039 13039 I o.rda8397cf35f3: AssetManager2(0x77381eb4af18) locale list changing from [] to [en-US]
+10-13 06:57:26.367 13039 13039 V GraphicsEnvironment: Currently set values for:
+10-13 06:57:26.367 13039 13039 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-13 06:57:26.367 13039 13039 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-13 06:57:26.367 13039 13039 V GraphicsEnvironment: verification.crash.demo.rda8397cf35f3 is not listed in per-application setting
+10-13 06:57:26.368 13039 13039 V GraphicsEnvironment: ANGLE allowlist from config: 
+10-13 06:57:26.368 13039 13039 V GraphicsEnvironment: verification.crash.demo.rda8397cf35f3 is not listed in ANGLE allowlist or settings, returning default
+10-13 06:57:26.368 13039 13039 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+--------- beginning of system
+10-13 06:57:26.528 13039 13053 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+10-13 06:57:26.533 13039 13039 I o.rda8397cf35f3: AssetManager2(0x77381eb48998) locale list changing from [] to [en-US]
+10-13 06:57:26.675 13039 13039 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+10-13 06:57:26.707 13039 13053 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+10-13 06:57:26.717 13039 13053 I EGL_emulation: Opening libGLESv2_emulation.so
+10-13 06:57:26.741 13039 13053 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-13 06:57:26.934 13039 13039 W HWUI    : Image decoding logging dropped!
+10-13 06:57:26.942 13039 13039 W HWUI    : Image decoding logging dropped!
+10-13 06:57:26.943 13039 13039 W HWUI    : Image decoding logging dropped!
+10-13 06:57:26.997 13039 13039 D CompatChangeReporter: Compat change id reported: 376561342; UID 10215; state: ENABLED
+10-13 06:57:27.038 13039 13039 D CompatChangeReporter: Compat change id reported: 377864165; UID 10215; state: ENABLED
+10-13 06:57:27.042 13039 13039 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+10-13 06:57:27.369 13039 13039 W HWUI    : Unknown dataspace 0
+10-13 06:57:28.717 13039 13060 E SurfaceSyncGroup: Failed to receive transaction ready in 1000ms. Marking SurfaceSyncGroup(wmsSync-VRI[CrashTestActivity]#0) as ready
+10-13 06:57:28.718 13039 13060 E SurfaceSyncGroup: Failed to receive transaction ready in 1000ms. Marking SurfaceSyncGroup(VRI[CrashTestActivity]#1) as ready
+10-13 06:57:29.795 13039 13039 I Choreographer: Skipped 140 frames!  The application may be doing too much work on its main thread.
+10-13 06:57:29.845 13039 13049 I HWUI    : Davey! duration=2399ms; Flags=1, FrameTimelineVsyncId=135602, IntendedVsync=875844421510, Vsync=875877754842, InputEventId=0, HandleInputStart=875881254700, AnimationStart=875881285300, PerformTraversalsStart=875881318100, DrawStart=876155100400, FrameDeadline=875861088176, FrameStartTime=875881194200, FrameInterval=16666666, WorkloadTarget=16666666, SyncQueued=876188205500, SyncStart=876189853000, IssueDrawCommandsStart=876190307100, SwapBuffers=877595308400, FrameCompleted=878245659200, DequeueBufferDuration=29800, QueueBufferDuration=1107200, GpuCompleted=878245659200, SwapBuffersCompleted=878221392700, DisplayPresentTime=0, CommandSubmissionCompleted=877595308400, 
+10-13 06:57:30.015 13039 13039 D InsetsController: hide(ime(), fromIme=false)
+10-13 06:57:30.016 13039 13039 I ImeTracker: verification.crash.demo.rda8397cf35f3:1879218b: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-13 06:57:30.069 13039 13051 I HWUI    : Davey! duration=2479ms; Flags=0, FrameTimelineVsyncId=135625, IntendedVsync=875911088174, Vsync=878244421414, InputEventId=0, HandleInputStart=878246870000, AnimationStart=878246895100, PerformTraversalsStart=878310631400, DrawStart=878312440300, FrameDeadline=878277754746, FrameStartTime=878244669400, FrameInterval=16666666, WorkloadTarget=16666666, SyncQueued=878330406000, SyncStart=878334363100, IssueDrawCommandsStart=878334629500, SwapBuffers=878335798300, FrameCompleted=878394314600, DequeueBufferDuration=28100, QueueBufferDuration=423000, GpuCompleted=878394314600, SwapBuffersCompleted=878353346200, DisplayPresentTime=0, CommandSubmissionCompleted=878335798300, 
+10-13 06:57:31.682 13039 13044 I o.rda8397cf35f3: Compiler allocated 5042KB to compile void android.view.ViewRootImpl.performTraversals()
+10-13 06:57:35.876 13039 13039 D CompatChangeReporter: Compat change id reported: 379365266; UID 10215; state: ENABLED
+10-13 06:57:36.423 13039 13039 I Choreographer: Skipped 34 frames!  The application may be doing too much work on its main thread.
+10-13 06:57:36.897 13039 13051 I HWUI    : Davey! duration=998ms; Flags=1, FrameTimelineVsyncId=136155, IntendedVsync=884294421172, Vsync=884861087816, InputEventId=0, HandleInputStart=884874716600, AnimationStart=884874750700, PerformTraversalsStart=884888489600, DrawStart=885259057100, FrameDeadline=884311087838, FrameStartTime=884872096400, FrameInterval=16666666, WorkloadTarget=16666666, SyncQueued=885264049400, SyncStart=885273589400, IssueDrawCommandsStart=885273831500, SwapBuffers=885280626000, FrameCompleted=885302880800, DequeueBufferDuration=28600, QueueBufferDuration=559200, GpuCompleted=885302694900, SwapBuffersCompleted=885302880800, DisplayPresentTime=0, CommandSubmissionCompleted=885280626000, 
+10-13 06:57:40.590 13039 13039 D nativeloader: Load /data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk!/lib/x86_64/libcrash_native.so using class loader ns clns-9 (caller=/data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk!classes2.dex): ok
+10-13 06:57:40.593 13039 13039 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.app.Dialog$$ExternalSyntheticLambda2@31d1d04
+10-13 06:57:40.749 13039 13053 D HWUI    : endAllActiveAnimators on 0x77383eb83eb0 (RippleDrawable) with handle 0x7737feb91740
+10-13 06:57:40.881 13039 13039 I Choreographer: Skipped 38 frames!  The application may be doing too much work on its main thread.
+10-13 06:57:40.943 13039 13039 E lib_crash: scenario=native-abort runId=demo-cc5c2088720c4a3abfeb8ee549601d70 thread=main
+10-13 06:57:40.944 13039 13039 E lib_crash: native-entry code=12
+--------- beginning of crash
+10-13 06:57:40.950 13039 13039 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 13039 (o.rda8397cf35f3), pid 13039 (o.rda8397cf35f3)
+10-13 06:57:41.209 13039 13051 I HWUI    : Davey! duration=871ms; Flags=0, FrameTimelineVsyncId=136783, IntendedVsync=888694420996, Vsync=889327754304, InputEventId=0, HandleInputStart=889333260000, AnimationStart=889333284600, PerformTraversalsStart=889333402500, DrawStart=889333627800, FrameDeadline=888711087662, FrameStartTime=889330870800, FrameInterval=16666666, WorkloadTarget=16666666, SyncQueued=889369597600, SyncStart=889387018600, IssueDrawCommandsStart=889387280700, SwapBuffers=889483780700, FrameCompleted=889583354200, DequeueBufferDuration=29500, QueueBufferDuration=36562700, GpuCompleted=889583181000, SwapBuffersCompleted=889583354200, DisplayPresentTime=0, CommandSubmissionCompleted=889483780700,

@@ -1,0 +1,65 @@
+--------- beginning of main
+10-13 06:47:49.626  6627  6627 I o.rda8397cf35f3: Late-enabling -Xcheck:jni
+10-13 06:47:49.738  6627  6627 I o.rda8397cf35f3: Using CollectorTypeCMC GC.
+10-13 06:47:49.747  6627  6627 W o.rda8397cf35f3: Unexpected CPU variant for x86: x86_64.
+10-13 06:47:49.747  6627  6627 W o.rda8397cf35f3: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, alderlake, default
+10-13 06:47:49.809  6627  6627 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-13 06:47:50.391  6627  6627 D nativeloader: Configuring clns-9 for other apk /data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/lib/x86_64:/data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/verification.crash.demo.rda8397cf35f3
+10-13 06:47:50.401  6627  6627 I o.rda8397cf35f3: AssetManager2(0x77381eb4c4f8) locale list changing from [] to [en-US]
+10-13 06:47:50.434  6627  6627 V GraphicsEnvironment: Currently set values for:
+10-13 06:47:50.434  6627  6627 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-13 06:47:50.434  6627  6627 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-13 06:47:50.434  6627  6627 V GraphicsEnvironment: verification.crash.demo.rda8397cf35f3 is not listed in per-application setting
+10-13 06:47:50.436  6627  6627 V GraphicsEnvironment: ANGLE allowlist from config: 
+10-13 06:47:50.438  6627  6627 V GraphicsEnvironment: verification.crash.demo.rda8397cf35f3 is not listed in ANGLE allowlist or settings, returning default
+10-13 06:47:50.438  6627  6627 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+--------- beginning of system
+10-13 06:47:50.515  6627  6643 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+10-13 06:47:50.578  6627  6643 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+10-13 06:47:50.580  6627  6643 I EGL_emulation: Opening libGLESv2_emulation.so
+10-13 06:47:50.592  6627  6643 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-13 06:47:50.626  6627  6627 I o.rda8397cf35f3: AssetManager2(0x77381eb55e18) locale list changing from [] to [en-US]
+10-13 06:47:50.698  6627  6627 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+10-13 06:47:50.910  6627  6627 W HWUI    : Image decoding logging dropped!
+10-13 06:47:50.912  6627  6627 W HWUI    : Image decoding logging dropped!
+10-13 06:47:50.913  6627  6627 W HWUI    : Image decoding logging dropped!
+10-13 06:47:50.931  6627  6627 D CompatChangeReporter: Compat change id reported: 376561342; UID 10215; state: ENABLED
+10-13 06:47:50.948  6627  6627 D CompatChangeReporter: Compat change id reported: 377864165; UID 10215; state: ENABLED
+10-13 06:47:50.951  6627  6627 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+10-13 06:47:51.081  6627  6627 W HWUI    : Unknown dataspace 0
+10-13 06:47:52.181  6627  6627 I Choreographer: Skipped 63 frames!  The application may be doing too much work on its main thread.
+10-13 06:47:52.194  6627  6636 I HWUI    : Davey! duration=1079ms; Flags=1, FrameTimelineVsyncId=27523, IntendedVsync=299544444562, Vsync=299561111228, InputEventId=0, HandleInputStart=299565556100, AnimationStart=299565584600, PerformTraversalsStart=299565620900, DrawStart=299736666400, FrameDeadline=299561111228, FrameStartTime=299565479500, FrameInterval=16666666, WorkloadTarget=16666666, SyncQueued=299770380800, SyncStart=299770874900, IssueDrawCommandsStart=299771457300, SwapBuffers=300454135500, FrameCompleted=300624475600, DequeueBufferDuration=30200, QueueBufferDuration=809200, GpuCompleted=300624285900, SwapBuffersCompleted=300624475600, DisplayPresentTime=0, CommandSubmissionCompleted=300454135500, 
+10-13 06:47:52.232  6627  6649 I HWUI    : Davey! duration=1084ms; Flags=0, FrameTimelineVsyncId=27553, IntendedVsync=299577777894, Vsync=300627777852, InputEventId=0, HandleInputStart=300631387800, AnimationStart=300631440300, PerformTraversalsStart=300633127500, DrawStart=300633806000, FrameDeadline=300644444518, FrameStartTime=300630282300, FrameInterval=16666666, WorkloadTarget=16666666, SyncQueued=300636082800, SyncStart=300641654500, IssueDrawCommandsStart=300642253600, SwapBuffers=300643514200, FrameCompleted=300667995400, DequeueBufferDuration=49200, QueueBufferDuration=9979000, GpuCompleted=300666834100, SwapBuffersCompleted=300667995400, DisplayPresentTime=0, CommandSubmissionCompleted=300643514200, 
+10-13 06:47:52.574  6627  6627 D InsetsController: hide(ime(), fromIme=false)
+10-13 06:47:52.575  6627  6627 I ImeTracker: verification.crash.demo.rda8397cf35f3:ccf3fe64: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-13 06:47:54.053  6627  6631 I o.rda8397cf35f3: Compiler allocated 5042KB to compile void android.view.ViewRootImpl.performTraversals()
+10-13 06:47:58.313  6627  6627 D CompatChangeReporter: Compat change id reported: 379365266; UID 10215; state: ENABLED
+10-13 06:47:58.803  6627  6627 I Choreographer: Skipped 38 frames!  The application may be doing too much work on its main thread.
+10-13 06:47:58.929  6627  6637 I HWUI    : Davey! duration=710ms; Flags=0, FrameTimelineVsyncId=30761, IntendedVsync=306611110946, Vsync=307244444254, InputEventId=0, HandleInputStart=307258069100, AnimationStart=307258144800, PerformTraversalsStart=307259172800, DrawStart=307259932200, FrameDeadline=307327777584, FrameStartTime=307252474400, FrameInterval=16666666, WorkloadTarget=16666666, SyncQueued=307273299100, SyncStart=307285311800, IssueDrawCommandsStart=307285484800, SwapBuffers=307289320100, FrameCompleted=307333432900, DequeueBufferDuration=2415400, QueueBufferDuration=537800, GpuCompleted=307330894800, SwapBuffersCompleted=307333432900, DisplayPresentTime=0, CommandSubmissionCompleted=307289320100, 
+10-13 06:47:59.254  6627  6636 I HWUI    : Davey! duration=1048ms; Flags=1, FrameTimelineVsyncId=30761, IntendedVsync=306611110946, Vsync=307244444254, InputEventId=0, HandleInputStart=307258069100, AnimationStart=307258144800, PerformTraversalsStart=307259172800, DrawStart=307586750700, FrameDeadline=306627777612, FrameStartTime=307252474400, FrameInterval=16666666, WorkloadTarget=16666666, SyncQueued=307603825600, SyncStart=307610832800, IssueDrawCommandsStart=307611004200, SwapBuffers=307646113300, FrameCompleted=307666274700, DequeueBufferDuration=28000, QueueBufferDuration=974300, GpuCompleted=307665466900, SwapBuffersCompleted=307666274700, DisplayPresentTime=0, CommandSubmissionCompleted=307646113300, 
+10-13 06:48:04.285  6627  6627 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.app.Dialog$$ExternalSyntheticLambda2@298d473
+10-13 06:48:04.325  6627  6643 D HWUI    : endAllActiveAnimators on 0x77383eb85ee0 (RippleDrawable) with handle 0x7737feb8bb90
+10-13 06:48:04.416  6627  6627 I Choreographer: Skipped 49 frames!  The application may be doing too much work on its main thread.
+10-13 06:48:04.485  6627  6627 E lib_crash: scenario=runtime-exception runId=demo-4b866ff44287497fa0975fa213861a5f thread=main
+10-13 06:48:04.491  6627  6627 D AndroidRuntime: Shutting down VM
+--------- beginning of crash
+10-13 06:48:04.552  6627  6627 E AndroidRuntime: FATAL EXCEPTION: main
+10-13 06:48:04.552  6627  6627 E AndroidRuntime: Process: verification.crash.demo.rda8397cf35f3, PID: 6627
+10-13 06:48:04.552  6627  6627 E AndroidRuntime: java.lang.RuntimeException: Intentional lib_crash runtime exception
+10-13 06:48:04.552  6627  6627 E AndroidRuntime: 	at com.wkq.crash.RuntimeExceptionCrash.causeCrash$lib_crash_debug(RuntimeExceptionCrash.kt:5)
+10-13 06:48:04.552  6627  6627 E AndroidRuntime: 	at com.wkq.crash.CrashScenario.trigger$lambda$1(CrashScenario.kt:28)
+10-13 06:48:04.552  6627  6627 E AndroidRuntime: 	at com.wkq.crash.CrashScenario.$r8$lambda$FTHJZ65dvv9HADmPTeLZ3-lOGrQ(Unknown Source:0)
+10-13 06:48:04.552  6627  6627 E AndroidRuntime: 	at com.wkq.crash.CrashScenario$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+10-13 06:48:04.552  6627  6627 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:995)
+10-13 06:48:04.552  6627  6627 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:103)
+10-13 06:48:04.552  6627  6627 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:248)
+10-13 06:48:04.552  6627  6627 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:338)
+10-13 06:48:04.552  6627  6627 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:9067)
+10-13 06:48:04.552  6627  6627 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-13 06:48:04.552  6627  6627 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:593)
+10-13 06:48:04.552  6627  6627 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:932)
+10-13 06:48:04.552  6627  6627 E AndroidRuntime: 	Suppressed: com.wkq.crash.CrashRunMarker: lib_crash scenario=runtime-exception runId=demo-4b866ff44287497fa0975fa213861a5f
+10-13 06:48:04.552  6627  6627 E AndroidRuntime: 		at com.wkq.crash.CrashScenario.trigger$lambda$1(CrashScenario.kt:31)
+10-13 06:48:04.552  6627  6627 E AndroidRuntime: 		... 10 more
+10-13 06:48:04.619  6627  6636 I HWUI    : Davey! duration=965ms; Flags=0, FrameTimelineVsyncId=32448, IntendedVsync=312044444062, Vsync=312861110696, InputEventId=0, HandleInputStart=312867674200, AnimationStart=312867697400, PerformTraversalsStart=312867824900, DrawStart=312872862100, FrameDeadline=312061110728, FrameStartTime=312863232000, FrameInterval=16666666, WorkloadTarget=16666666, SyncQueued=312907573300, SyncStart=312910039500, IssueDrawCommandsStart=312910317400, SwapBuffers=312974248700, FrameCompleted=313012052600, DequeueBufferDuration=28400, QueueBufferDuration=792300, GpuCompleted=313011745500, SwapBuffersCompleted=313012052600, DisplayPresentTime=0, CommandSubmissionCompleted=312974248700, 
+10-13 06:48:04.878  6627  6627 I Process : Sending signal. PID: 6627 SIG: 9

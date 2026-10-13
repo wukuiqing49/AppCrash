@@ -1,0 +1,4 @@
+10-13 04:40:57.728 13193 13208 E lib_crash: scenario=native-class-cast runId=native-e7f1e8220b16430a8e326263433b0d94 thread=lib_crash-native-class-cast
+10-13 04:40:57.729 13193 13208 E lib_crash: native-entry code=6
+10-13 04:40:57.730 13193 13208 E libc++abi: terminating due to uncaught exception of type std::bad_cast: std::bad_cast
+10-13 04:40:57.730 13193 13208 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 13208 (lib_crash-nativ), pid 13193 (h.r52694d8a72bc)

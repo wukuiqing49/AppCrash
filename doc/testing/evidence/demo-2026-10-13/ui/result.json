@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "applicationId": "verification.crash.demo.r9f8f2d9c9149",
+  "checks": [
+    {
+      "id": "editable-run-id-keyboard",
+      "status": "passed"
+    },
+    {
+      "id": "startup-mode-scenario-thread-cancel",
+      "status": "passed"
+    },
+    {
+      "id": "landscape-scroll-cancel",
+      "status": "passed"
+    }
+  ],
+  "cases": [],
+  "scope": "Debug demo UI and fault/process behavior; no collection SDK",
+  "api": "36",
+  "abi": "x86_64",
+  "pageSize": "4096",
+  "apkSha256": "1b94ffb16cfe8bf7090799077e9cdcae9d2b86219f7aeeda8ed766425a732d40",
+  "fixtureRemoved": true
+}

@@ -1,0 +1,4 @@
+10-13 04:41:08.959 13710 13725 E lib_crash: scenario=native-uninitialized-property runId=native-fa7819f3e56b428b989e9aa746b0042b thread=lib_crash-native-uninitialized-property
+10-13 04:41:08.959 13710 13725 E lib_crash: native-entry code=11
+10-13 04:41:08.960 13710 13725 E libc++abi: terminating due to uncaught exception of type std::bad_optional_access: bad_optional_access
+10-13 04:41:08.960 13710 13725 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 13725 (lib_crash-nativ), pid 13710 (h.r52694d8a72bc)

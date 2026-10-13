@@ -1,0 +1,45 @@
+--------- beginning of main
+10-13 06:54:34.382 11204 11204 I o.rda8397cf35f3: Late-enabling -Xcheck:jni
+10-13 06:54:34.441 11204 11204 I o.rda8397cf35f3: Using CollectorTypeCMC GC.
+10-13 06:54:34.442 11204 11204 W o.rda8397cf35f3: Unexpected CPU variant for x86: x86_64.
+10-13 06:54:34.442 11204 11204 W o.rda8397cf35f3: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, alderlake, default
+10-13 06:54:34.492 11204 11204 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-13 06:54:34.673 11204 11204 D nativeloader: Configuring clns-9 for other apk /data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/lib/x86_64:/data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/verification.crash.demo.rda8397cf35f3
+10-13 06:54:34.681 11204 11204 I o.rda8397cf35f3: AssetManager2(0x77381eb4af18) locale list changing from [] to [en-US]
+10-13 06:54:34.704 11204 11204 V GraphicsEnvironment: Currently set values for:
+10-13 06:54:34.705 11204 11204 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-13 06:54:34.705 11204 11204 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-13 06:54:34.705 11204 11204 V GraphicsEnvironment: verification.crash.demo.rda8397cf35f3 is not listed in per-application setting
+10-13 06:54:34.706 11204 11204 V GraphicsEnvironment: ANGLE allowlist from config: 
+10-13 06:54:34.717 11204 11204 V GraphicsEnvironment: verification.crash.demo.rda8397cf35f3 is not listed in ANGLE allowlist or settings, returning default
+10-13 06:54:34.717 11204 11204 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+--------- beginning of system
+10-13 06:54:34.794 11204 11219 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+10-13 06:54:34.800 11204 11204 I o.rda8397cf35f3: AssetManager2(0x77381eb48998) locale list changing from [] to [en-US]
+10-13 06:54:34.889 11204 11219 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+10-13 06:54:34.890 11204 11219 I EGL_emulation: Opening libGLESv2_emulation.so
+10-13 06:54:34.899 11204 11204 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+10-13 06:54:34.907 11204 11219 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-13 06:54:35.065 11204 11204 W HWUI    : Image decoding logging dropped!
+10-13 06:54:35.066 11204 11204 W HWUI    : Image decoding logging dropped!
+10-13 06:54:35.068 11204 11204 W HWUI    : Image decoding logging dropped!
+10-13 06:54:35.085 11204 11204 D CompatChangeReporter: Compat change id reported: 376561342; UID 10215; state: ENABLED
+10-13 06:54:35.102 11204 11204 D CompatChangeReporter: Compat change id reported: 377864165; UID 10215; state: ENABLED
+10-13 06:54:35.108 11204 11204 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+10-13 06:54:35.236 11204 11204 W HWUI    : Unknown dataspace 0
+10-13 06:54:36.050 11204 11204 D InsetsController: hide(ime(), fromIme=false)
+10-13 06:54:36.050 11204 11204 I ImeTracker: verification.crash.demo.rda8397cf35f3:abd9f3a9: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-13 06:54:36.959 11204 11209 I o.rda8397cf35f3: Compiler allocated 5042KB to compile void android.view.ViewRootImpl.performTraversals()
+10-13 06:54:41.540 11204 11204 D CompatChangeReporter: Compat change id reported: 379365266; UID 10215; state: ENABLED
+10-13 06:54:42.452 11204 11214 I HWUI    : Davey! duration=842ms; Flags=1, FrameTimelineVsyncId=99222, IntendedVsync=709977761478, Vsync=710377761462, InputEventId=0, HandleInputStart=710394811400, AnimationStart=710394845600, PerformTraversalsStart=710395329400, DrawStart=710747163000, FrameDeadline=709994428144, FrameStartTime=710393781200, FrameInterval=16666666, WorkloadTarget=16666666, SyncQueued=710756101200, SyncStart=710794218600, IssueDrawCommandsStart=710795022700, SwapBuffers=710830799200, FrameCompleted=710858813400, DequeueBufferDuration=59700, QueueBufferDuration=2404100, GpuCompleted=710858322200, SwapBuffersCompleted=710858813400, DisplayPresentTime=0, CommandSubmissionCompleted=710830799200, 
+10-13 06:54:42.455 11204 11204 I Choreographer: Skipped 31 frames!  The application may be doing too much work on its main thread.
+10-13 06:54:45.318 11204 11204 D nativeloader: Load /data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk!/lib/x86_64/libcrash_native.so using class loader ns clns-9 (caller=/data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk!classes2.dex): ok
+10-13 06:54:45.321 11204 11204 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.app.Dialog$$ExternalSyntheticLambda2@c7e7ca4
+10-13 06:54:45.325 11204 11293 E lib_crash: scenario=native-list-index-out-of-bounds runId=demo-9e614751dbb244e796ead19c642d81f0 thread=lib_crash-native-list-index-out-of-bounds
+10-13 06:54:45.325 11204 11293 E lib_crash: native-entry code=4
+10-13 06:54:45.325 11204 11293 E libc++abi: terminating due to uncaught exception of type std::out_of_range: vector
+--------- beginning of crash
+10-13 06:54:45.326 11204 11293 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 11293 (lib_crash-nativ), pid 11204 (o.rda8397cf35f3)
+10-13 06:54:45.353 11204 11219 D HWUI    : endAllActiveAnimators on 0x77383eb763d0 (RippleDrawable) with handle 0x7737feb7bf60
+10-13 06:54:45.640 11204 11204 D InsetsController: hide(ime(), fromIme=false)
+10-13 06:54:45.646 11204 11204 I ImeTracker: verification.crash.demo.rda8397cf35f3:8cf179e1: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN

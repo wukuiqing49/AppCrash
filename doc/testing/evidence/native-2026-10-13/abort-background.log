@@ -1,0 +1,3 @@
+10-13 04:41:11.041 13811 13826 E lib_crash: scenario=native-abort runId=native-1211134093d64c30a2be00768d20a781 thread=lib_crash-native-abort
+10-13 04:41:11.041 13811 13826 E lib_crash: native-entry code=12
+10-13 04:41:11.041 13811 13826 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 13826 (lib_crash-nativ), pid 13811 (h.r52694d8a72bc)

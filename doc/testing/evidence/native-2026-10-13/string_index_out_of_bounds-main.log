@@ -1,0 +1,4 @@
+10-13 04:40:54.539 13043 13043 E lib_crash: scenario=native-string-index-out-of-bounds runId=native-3316da6caa334d85b202b09e22e1be38 thread=main
+10-13 04:40:54.539 13043 13043 E lib_crash: native-entry code=5
+10-13 04:40:54.540 13043 13043 E libc++abi: terminating due to uncaught exception of type std::out_of_range: basic_string
+10-13 04:40:54.540 13043 13043 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 13043 (h.r52694d8a72bc), pid 13043 (h.r52694d8a72bc)

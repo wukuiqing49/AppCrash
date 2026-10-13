@@ -1,0 +1,63 @@
+--------- beginning of main
+10-13 06:50:10.043  8523  8523 I o.rda8397cf35f3: Late-enabling -Xcheck:jni
+10-13 06:50:10.259  8523  8523 W o.rda8397cf35f3: Suspending all threads took: 10.486ms
+10-13 06:50:10.259  8523  8523 I o.rda8397cf35f3: Using CollectorTypeCMC GC.
+10-13 06:50:10.278  8523  8523 W o.rda8397cf35f3: Unexpected CPU variant for x86: x86_64.
+10-13 06:50:10.278  8523  8523 W o.rda8397cf35f3: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, alderlake, default
+10-13 06:50:10.367  8523  8523 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-13 06:50:10.735  8523  8523 D nativeloader: Configuring clns-9 for other apk /data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/lib/x86_64:/data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/verification.crash.demo.rda8397cf35f3
+10-13 06:50:10.745  8523  8523 I o.rda8397cf35f3: AssetManager2(0x77381eb4af18) locale list changing from [] to [en-US]
+10-13 06:50:10.778  8523  8523 V GraphicsEnvironment: Currently set values for:
+10-13 06:50:10.778  8523  8523 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-13 06:50:10.779  8523  8523 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-13 06:50:10.779  8523  8523 V GraphicsEnvironment: verification.crash.demo.rda8397cf35f3 is not listed in per-application setting
+10-13 06:50:10.780  8523  8523 V GraphicsEnvironment: ANGLE allowlist from config: 
+10-13 06:50:10.780  8523  8523 V GraphicsEnvironment: verification.crash.demo.rda8397cf35f3 is not listed in ANGLE allowlist or settings, returning default
+10-13 06:50:10.780  8523  8523 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+--------- beginning of system
+10-13 06:50:10.817  8523  8537 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+10-13 06:50:10.822  8523  8523 I o.rda8397cf35f3: AssetManager2(0x77381eb48998) locale list changing from [] to [en-US]
+10-13 06:50:10.888  8523  8537 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+10-13 06:50:10.891  8523  8537 I EGL_emulation: Opening libGLESv2_emulation.so
+10-13 06:50:10.897  8523  8523 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+10-13 06:50:10.901  8523  8537 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-13 06:50:11.006  8523  8523 W HWUI    : Image decoding logging dropped!
+10-13 06:50:11.009  8523  8523 W HWUI    : Image decoding logging dropped!
+10-13 06:50:11.010  8523  8523 W HWUI    : Image decoding logging dropped!
+10-13 06:50:11.029  8523  8523 D CompatChangeReporter: Compat change id reported: 376561342; UID 10215; state: ENABLED
+10-13 06:50:11.045  8523  8523 D CompatChangeReporter: Compat change id reported: 377864165; UID 10215; state: ENABLED
+10-13 06:50:11.048  8523  8523 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+10-13 06:50:11.179  8523  8523 W HWUI    : Unknown dataspace 0
+10-13 06:50:11.942  8523  8523 I Choreographer: Skipped 42 frames!  The application may be doing too much work on its main thread.
+10-13 06:50:11.961  8523  8534 I HWUI    : Davey! duration=740ms; Flags=1, FrameTimelineVsyncId=54606, IntendedVsync=439644438958, Vsync=439661105624, InputEventId=0, HandleInputStart=439666126900, AnimationStart=439666148100, PerformTraversalsStart=439666183200, DrawStart=439777329700, FrameDeadline=439661105624, FrameStartTime=439666039800, FrameInterval=16666666, WorkloadTarget=16666666, SyncQueued=439786906800, SyncStart=439787418800, IssueDrawCommandsStart=439788027300, SwapBuffers=440230051700, FrameCompleted=440385768900, DequeueBufferDuration=33100, QueueBufferDuration=871900, GpuCompleted=440385470800, SwapBuffersCompleted=440385768900, DisplayPresentTime=0, CommandSubmissionCompleted=440230051700, 
+10-13 06:50:12.112  8523  8545 I HWUI    : Davey! duration=769ms; Flags=0, FrameTimelineVsyncId=54621, IntendedVsync=439677772290, Vsync=440377772262, InputEventId=0, HandleInputStart=440393253600, AnimationStart=440393293200, PerformTraversalsStart=440394706100, DrawStart=440395796200, FrameDeadline=440411105594, FrameStartTime=440391569900, FrameInterval=16666666, WorkloadTarget=16666666, SyncQueued=440400623700, SyncStart=440407623400, IssueDrawCommandsStart=440407837700, SwapBuffers=440409967300, FrameCompleted=440454026700, DequeueBufferDuration=41800, QueueBufferDuration=1100000, GpuCompleted=440453017300, SwapBuffersCompleted=440454026700, DisplayPresentTime=0, CommandSubmissionCompleted=440409967300, 
+10-13 06:50:12.142  8523  8523 D InsetsController: hide(ime(), fromIme=false)
+10-13 06:50:12.142  8523  8523 I ImeTracker: verification.crash.demo.rda8397cf35f3:93ce7df3: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-13 06:50:13.122  8523  8528 I o.rda8397cf35f3: Compiler allocated 5042KB to compile void android.view.ViewRootImpl.performTraversals()
+10-13 06:50:17.110  8523  8523 D CompatChangeReporter: Compat change id reported: 379365266; UID 10215; state: ENABLED
+10-13 06:50:20.280  8523  8523 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.app.Dialog$$ExternalSyntheticLambda2@15f8c44
+10-13 06:50:20.292  8523  8537 D HWUI    : endAllActiveAnimators on 0x77383eb81e80 (RippleDrawable) with handle 0x7737feb922b0
+10-13 06:50:20.405  8523  8523 E lib_crash: scenario=class-cast runId=demo-5e045318b7d943f0b61c7cad0e18e89f thread=main
+10-13 06:50:20.412  8523  8523 D AndroidRuntime: Shutting down VM
+--------- beginning of crash
+10-13 06:50:20.418  8523  8523 E AndroidRuntime: FATAL EXCEPTION: main
+10-13 06:50:20.418  8523  8523 E AndroidRuntime: Process: verification.crash.demo.rda8397cf35f3, PID: 8523
+10-13 06:50:20.418  8523  8523 E AndroidRuntime: java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.String
+10-13 06:50:20.418  8523  8523 E AndroidRuntime: 	at com.wkq.crash.ClassCastCrash.causeCrash$lib_crash_debug(ClassCastCrash.kt:6)
+10-13 06:50:20.418  8523  8523 E AndroidRuntime: 	at com.wkq.crash.CrashScenario.trigger$lambda$1(CrashScenario.kt:28)
+10-13 06:50:20.418  8523  8523 E AndroidRuntime: 	at com.wkq.crash.CrashScenario.$r8$lambda$FTHJZ65dvv9HADmPTeLZ3-lOGrQ(Unknown Source:0)
+10-13 06:50:20.418  8523  8523 E AndroidRuntime: 	at com.wkq.crash.CrashScenario$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+10-13 06:50:20.418  8523  8523 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:995)
+10-13 06:50:20.418  8523  8523 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:103)
+10-13 06:50:20.418  8523  8523 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:248)
+10-13 06:50:20.418  8523  8523 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:338)
+10-13 06:50:20.418  8523  8523 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:9067)
+10-13 06:50:20.418  8523  8523 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-13 06:50:20.418  8523  8523 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:593)
+10-13 06:50:20.418  8523  8523 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:932)
+10-13 06:50:20.418  8523  8523 E AndroidRuntime: 	Suppressed: com.wkq.crash.CrashRunMarker: lib_crash scenario=class-cast runId=demo-5e045318b7d943f0b61c7cad0e18e89f
+10-13 06:50:20.418  8523  8523 E AndroidRuntime: 		at com.wkq.crash.CrashScenario.trigger$lambda$1(CrashScenario.kt:31)
+10-13 06:50:20.418  8523  8523 E AndroidRuntime: 		... 10 more
+10-13 06:50:25.639  8523  8525 I o.rda8397cf35f3: Thread[2,tid=8525,WaitingInMainSignalCatcherLoop,Thread*=0x77378eb55be0,peer=0x20a0020,"Signal Catcher"]: reacting to signal 3
+10-13 06:50:25.639  8523  8525 I o.rda8397cf35f3: 
+10-13 06:50:25.818  8523  8525 I o.rda8397cf35f3: Wrote stack traces to tombstoned

@@ -1,0 +1,4 @@
+10-13 04:41:05.636 13560 13560 E lib_crash: scenario=native-illegal-state runId=native-96e5778648ce4a6b8fa73e175ceca79e thread=main
+10-13 04:41:05.636 13560 13560 E lib_crash: native-entry code=10
+10-13 04:41:05.638 13560 13560 E libc++abi: terminating due to uncaught exception of type std::logic_error: Intentional invalid state
+10-13 04:41:05.638 13560 13560 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 13560 (h.r52694d8a72bc), pid 13560 (h.r52694d8a72bc)

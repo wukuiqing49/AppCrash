@@ -1,0 +1,17 @@
+[versions]
+libCrash = "1.0.0"
+agp = "8.13.2"
+kotlin = "2.1.21"
+junit = "4.13.2"
+compileSdk = "36"
+minSdk = "24"
+ndk = "27.0.12077973"
+cmake = "3.22.1"
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
+[libraries]
+junit = { module = "junit:junit", version.ref = "junit" }

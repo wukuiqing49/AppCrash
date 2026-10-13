@@ -1,0 +1,3 @@
+10-13 04:41:10.240 13762 13762 E lib_crash: scenario=native-abort runId=native-0f11b2abba6d424fa1aaff3bf344b71d thread=main
+10-13 04:41:10.240 13762 13762 E lib_crash: native-entry code=12
+10-13 04:41:10.241 13762 13762 F libc    : Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 13762 (h.r52694d8a72bc), pid 13762 (h.r52694d8a72bc)

@@ -1,0 +1,236 @@
+{
+  "status": "passed",
+  "applicationId": "verification.crash.r52694d8a72bc",
+  "apkSha256": "641e5158b6c6dcc1e4b3eb1805699b0f0fca9009997d37de130189a428695dd0",
+  "api": "36",
+  "abi": "x86_64",
+  "pageSize": "4096",
+  "cases": [
+    {
+      "id": "runtime_exception-main",
+      "runId": "native-14b2388ee0804023bd094018df27ba7e",
+      "expectedSignal": "SIGABRT",
+      "status": "passed",
+      "durationSeconds": 1.61,
+      "evidence": "runtime_exception-main.log",
+      "observedCppException": "std::runtime_error"
+    },
+    {
+      "id": "runtime_exception-background",
+      "runId": "native-b2015e5f372949318c88678a983736c0",
+      "expectedSignal": "SIGABRT",
+      "status": "passed",
+      "durationSeconds": 1.39,
+      "evidence": "runtime_exception-background.log",
+      "observedCppException": "std::runtime_error"
+    },
+    {
+      "id": "null_pointer-main",
+      "runId": "native-f68c41e2c882484084bd2b560974e8ca",
+      "expectedSignal": "SIGSEGV",
+      "status": "passed",
+      "durationSeconds": 0.95,
+      "evidence": "null_pointer-main.log"
+    },
+    {
+      "id": "null_pointer-background",
+      "runId": "native-3e966545819a4060b301aa8e5efb7bc4",
+      "expectedSignal": "SIGSEGV",
+      "status": "passed",
+      "durationSeconds": 0.72,
+      "evidence": "null_pointer-background.log"
+    },
+    {
+      "id": "array_index_out_of_bounds-main",
+      "runId": "native-a4c0ca9ea74842ae81b73aa21c44abd6",
+      "expectedSignal": "SIGSEGV",
+      "status": "passed",
+      "durationSeconds": 1.14,
+      "evidence": "array_index_out_of_bounds-main.log"
+    },
+    {
+      "id": "array_index_out_of_bounds-background",
+      "runId": "native-36bfd50ff3e34fb9852fb8270fc82efe",
+      "expectedSignal": "SIGSEGV",
+      "status": "passed",
+      "durationSeconds": 1.17,
+      "evidence": "array_index_out_of_bounds-background.log"
+    },
+    {
+      "id": "list_index_out_of_bounds-main",
+      "runId": "native-64eabcbe400249c4b7f06ee08a71dd9d",
+      "expectedSignal": "SIGABRT",
+      "status": "passed",
+      "durationSeconds": 1.16,
+      "evidence": "list_index_out_of_bounds-main.log",
+      "observedCppException": "std::out_of_range"
+    },
+    {
+      "id": "list_index_out_of_bounds-background",
+      "runId": "native-a337242670914b9586a895ac61f36bae",
+      "expectedSignal": "SIGABRT",
+      "status": "passed",
+      "durationSeconds": 0.86,
+      "evidence": "list_index_out_of_bounds-background.log",
+      "observedCppException": "std::out_of_range"
+    },
+    {
+      "id": "string_index_out_of_bounds-main",
+      "runId": "native-3316da6caa334d85b202b09e22e1be38",
+      "expectedSignal": "SIGABRT",
+      "status": "passed",
+      "durationSeconds": 1.02,
+      "evidence": "string_index_out_of_bounds-main.log",
+      "observedCppException": "std::out_of_range"
+    },
+    {
+      "id": "string_index_out_of_bounds-background",
+      "runId": "native-5150fc9435f74e8880d110b0d37e9202",
+      "expectedSignal": "SIGABRT",
+      "status": "passed",
+      "durationSeconds": 1.06,
+      "evidence": "string_index_out_of_bounds-background.log",
+      "observedCppException": "std::out_of_range"
+    },
+    {
+      "id": "class_cast-main",
+      "runId": "native-3323509f3d0342b48fcd26d5bc93370e",
+      "expectedSignal": "SIGABRT",
+      "status": "passed",
+      "durationSeconds": 1.03,
+      "evidence": "class_cast-main.log",
+      "observedCppException": "std::bad_cast"
+    },
+    {
+      "id": "class_cast-background",
+      "runId": "native-e7f1e8220b16430a8e326263433b0d94",
+      "expectedSignal": "SIGABRT",
+      "status": "passed",
+      "durationSeconds": 1.19,
+      "evidence": "class_cast-background.log",
+      "observedCppException": "std::bad_cast"
+    },
+    {
+      "id": "integer_division_by_zero-main",
+      "runId": "native-0babe7154e8d493e858d44a651f9d2af",
+      "expectedSignal": "SIGFPE",
+      "status": "passed",
+      "durationSeconds": 1.28,
+      "evidence": "integer_division_by_zero-main.log"
+    },
+    {
+      "id": "integer_division_by_zero-background",
+      "runId": "native-ef1fba7babb2495cb7d44bc7fed81ede",
+      "expectedSignal": "SIGFPE",
+      "status": "passed",
+      "durationSeconds": 0.95,
+      "evidence": "integer_division_by_zero-background.log"
+    },
+    {
+      "id": "number_format-main",
+      "runId": "native-18404a8d978844e798e85f90f62fe9f8",
+      "expectedSignal": "SIGABRT",
+      "status": "passed",
+      "durationSeconds": 0.67,
+      "evidence": "number_format-main.log",
+      "observedCppException": "std::invalid_argument"
+    },
+    {
+      "id": "number_format-background",
+      "runId": "native-4dd2c44d248b479092dc35a4efdf13cb",
+      "expectedSignal": "SIGABRT",
+      "status": "passed",
+      "durationSeconds": 1.03,
+      "evidence": "number_format-background.log",
+      "observedCppException": "std::invalid_argument"
+    },
+    {
+      "id": "illegal_argument-main",
+      "runId": "native-642ea600e7284c7fbed431133b098c40",
+      "expectedSignal": "SIGABRT",
+      "status": "passed",
+      "durationSeconds": 0.95,
+      "evidence": "illegal_argument-main.log",
+      "observedCppException": "std::invalid_argument"
+    },
+    {
+      "id": "illegal_argument-background",
+      "runId": "native-004a74ff4cbf46bd9db339b574f68e1a",
+      "expectedSignal": "SIGABRT",
+      "status": "passed",
+      "durationSeconds": 1.23,
+      "evidence": "illegal_argument-background.log",
+      "observedCppException": "std::invalid_argument"
+    },
+    {
+      "id": "illegal_state-main",
+      "runId": "native-96e5778648ce4a6b8fa73e175ceca79e",
+      "expectedSignal": "SIGABRT",
+      "status": "passed",
+      "durationSeconds": 0.78,
+      "evidence": "illegal_state-main.log",
+      "observedCppException": "std::logic_error"
+    },
+    {
+      "id": "illegal_state-background",
+      "runId": "native-f3c0dcbfc9ad41ab8d6faff88cfdee19",
+      "expectedSignal": "SIGABRT",
+      "status": "passed",
+      "durationSeconds": 1.33,
+      "evidence": "illegal_state-background.log",
+      "observedCppException": "std::logic_error"
+    },
+    {
+      "id": "uninitialized_property-main",
+      "runId": "native-0faa45c5c94a4d2894f30d78cb010e21",
+      "expectedSignal": "SIGABRT",
+      "status": "passed",
+      "durationSeconds": 1.06,
+      "evidence": "uninitialized_property-main.log",
+      "observedCppException": "std::bad_optional_access"
+    },
+    {
+      "id": "uninitialized_property-background",
+      "runId": "native-fa7819f3e56b428b989e9aa746b0042b",
+      "expectedSignal": "SIGABRT",
+      "status": "passed",
+      "durationSeconds": 1.17,
+      "evidence": "uninitialized_property-background.log",
+      "observedCppException": "std::bad_optional_access"
+    },
+    {
+      "id": "abort-main",
+      "runId": "native-0f11b2abba6d424fa1aaff3bf344b71d",
+      "expectedSignal": "SIGABRT",
+      "status": "passed",
+      "durationSeconds": 0.7,
+      "evidence": "abort-main.log"
+    },
+    {
+      "id": "abort-background",
+      "runId": "native-1211134093d64c30a2be00768d20a781",
+      "expectedSignal": "SIGABRT",
+      "status": "passed",
+      "durationSeconds": 1.23,
+      "evidence": "abort-background.log"
+    },
+    {
+      "id": "segmentation_fault-main",
+      "runId": "native-aacf585f8ae343b48e8861495e3e4037",
+      "expectedSignal": "SIGSEGV",
+      "status": "passed",
+      "durationSeconds": 1.03,
+      "evidence": "segmentation_fault-main.log"
+    },
+    {
+      "id": "segmentation_fault-background",
+      "runId": "native-0d1775fd4c064b3bb790a610317e968e",
+      "expectedSignal": "SIGSEGV",
+      "status": "passed",
+      "durationSeconds": 0.66,
+      "evidence": "segmentation_fault-background.log"
+    }
+  ],
+  "scope": "Native trigger/process exit only; no collection SDK configured",
+  "fixtureRemoved": true
+}

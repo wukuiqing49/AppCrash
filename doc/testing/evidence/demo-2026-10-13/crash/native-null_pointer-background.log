@@ -1,0 +1,45 @@
+--------- beginning of main
+10-13 06:53:47.793 10663 10663 I o.rda8397cf35f3: Late-enabling -Xcheck:jni
+10-13 06:53:47.869 10663 10663 I o.rda8397cf35f3: Using CollectorTypeCMC GC.
+10-13 06:53:47.870 10663 10663 W o.rda8397cf35f3: Unexpected CPU variant for x86: x86_64.
+10-13 06:53:47.870 10663 10663 W o.rda8397cf35f3: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, alderlake, default
+10-13 06:53:47.891 10663 10663 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+10-13 06:53:48.211 10663 10663 D nativeloader: Configuring clns-9 for other apk /data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/lib/x86_64:/data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/verification.crash.demo.rda8397cf35f3
+10-13 06:53:48.337 10663 10663 I o.rda8397cf35f3: AssetManager2(0x77381eb4af18) locale list changing from [] to [en-US]
+10-13 06:53:48.393 10663 10663 V GraphicsEnvironment: Currently set values for:
+10-13 06:53:48.394 10663 10663 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+10-13 06:53:48.394 10663 10663 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+10-13 06:53:48.394 10663 10663 V GraphicsEnvironment: verification.crash.demo.rda8397cf35f3 is not listed in per-application setting
+10-13 06:53:48.395 10663 10663 V GraphicsEnvironment: ANGLE allowlist from config: 
+10-13 06:53:48.395 10663 10663 V GraphicsEnvironment: verification.crash.demo.rda8397cf35f3 is not listed in ANGLE allowlist or settings, returning default
+10-13 06:53:48.395 10663 10663 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+--------- beginning of system
+10-13 06:53:48.509 10663 10678 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+10-13 06:53:48.517 10663 10663 I o.rda8397cf35f3: AssetManager2(0x77381eb50cd8) locale list changing from [] to [en-US]
+10-13 06:53:48.583 10663 10678 I EGL_emulation: Opening libGLESv1_CM_emulation.so
+10-13 06:53:48.585 10663 10678 I EGL_emulation: Opening libGLESv2_emulation.so
+10-13 06:53:48.598 10663 10678 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+10-13 06:53:48.624 10663 10663 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+10-13 06:53:48.745 10663 10663 W HWUI    : Image decoding logging dropped!
+10-13 06:53:48.746 10663 10663 W HWUI    : Image decoding logging dropped!
+10-13 06:53:48.748 10663 10663 W HWUI    : Image decoding logging dropped!
+10-13 06:53:48.764 10663 10663 D CompatChangeReporter: Compat change id reported: 376561342; UID 10215; state: ENABLED
+10-13 06:53:48.779 10663 10663 D CompatChangeReporter: Compat change id reported: 377864165; UID 10215; state: ENABLED
+10-13 06:53:48.782 10663 10663 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+10-13 06:53:48.926 10663 10663 W HWUI    : Unknown dataspace 0
+10-13 06:53:49.680 10663 10663 I Choreographer: Skipped 41 frames!  The application may be doing too much work on its main thread.
+10-13 06:53:49.692 10663 10676 I HWUI    : Davey! duration=729ms; Flags=1, FrameTimelineVsyncId=89102, IntendedVsync=657394430248, Vsync=657427763580, InputEventId=0, HandleInputStart=657428010000, AnimationStart=657428036700, PerformTraversalsStart=657428094100, DrawStart=657522163600, FrameDeadline=657411096914, FrameStartTime=657427853100, FrameInterval=16666666, WorkloadTarget=16666666, SyncQueued=657546040500, SyncStart=657546464800, IssueDrawCommandsStart=657546772300, SwapBuffers=657996800300, FrameCompleted=658124553900, DequeueBufferDuration=74700, QueueBufferDuration=1382100, GpuCompleted=658123476400, SwapBuffersCompleted=658124553900, DisplayPresentTime=0, CommandSubmissionCompleted=657996800300, 
+10-13 06:53:49.792 10663 10676 I HWUI    : Davey! duration=717ms; Flags=0, FrameTimelineVsyncId=89124, IntendedVsync=657444430246, Vsync=658127763552, InputEventId=0, HandleInputStart=658130122400, AnimationStart=658130164900, PerformTraversalsStart=658131905000, DrawStart=658132755200, FrameDeadline=658144430218, FrameStartTime=658128465600, FrameInterval=16666666, WorkloadTarget=16666666, SyncQueued=658136140500, SyncStart=658140685400, IssueDrawCommandsStart=658141709600, SwapBuffers=658143613900, FrameCompleted=658166524100, DequeueBufferDuration=700000, QueueBufferDuration=957800, GpuCompleted=658165692700, SwapBuffersCompleted=658166524100, DisplayPresentTime=0, CommandSubmissionCompleted=658143613900, 
+10-13 06:53:50.069 10663 10663 D InsetsController: hide(ime(), fromIme=false)
+10-13 06:53:50.082 10663 10663 I ImeTracker: verification.crash.demo.rda8397cf35f3:8423939b: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+10-13 06:53:51.047 10663 10669 I o.rda8397cf35f3: Compiler allocated 5042KB to compile void android.view.ViewRootImpl.performTraversals()
+10-13 06:53:54.857 10663 10663 D CompatChangeReporter: Compat change id reported: 379365266; UID 10215; state: ENABLED
+10-13 06:53:57.513 10663 10663 D nativeloader: Load /data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk!/lib/x86_64/libcrash_native.so using class loader ns clns-9 (caller=/data/app/~~K6T2VRXRFnA9kHoFhjWGTA==/verification.crash.demo.rda8397cf35f3-WjmDzQ9tFyo-Qj2A9ZDSxw==/base.apk!classes2.dex): ok
+10-13 06:53:57.515 10663 10663 W WindowOnBackDispatcher: sendCancelIfRunning: isInProgress=false callback=android.app.Dialog$$ExternalSyntheticLambda2@c7e7ca4
+10-13 06:53:57.517 10663 10752 E lib_crash: scenario=native-null-pointer runId=demo-938be83b6bec4ef5862468ba8839426e thread=lib_crash-native-null-pointer
+10-13 06:53:57.517 10663 10752 E lib_crash: native-entry code=2
+--------- beginning of crash
+10-13 06:53:57.517 10663 10752 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 10752 (lib_crash-nativ), pid 10663 (o.rda8397cf35f3)
+10-13 06:53:57.558 10663 10678 D HWUI    : endAllActiveAnimators on 0x77383eb85ee0 (RippleDrawable) with handle 0x7737feb90570
+10-13 06:53:57.856 10663 10663 D InsetsController: hide(ime(), fromIme=false)
+10-13 06:53:57.857 10663 10663 I ImeTracker: verification.crash.demo.rda8397cf35f3:68d66fe4: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
